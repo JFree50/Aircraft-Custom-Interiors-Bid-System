@@ -3259,6 +3259,158 @@
             ]
           }
         ]
+      },
+      {
+        "date": "2025-06-02",
+        "tail": "",
+        "laborRate": 70,
+        "notes": "Tail Number wasn't provided",
+        "parts": [
+          {
+            "name": "remove and install carpet from cockpit to lavatory includes ducts and seat bases",
+            "hours": 400,
+            "materials": [
+              {
+                "name": "carpet",
+                "qty": 50,
+                "unit": "ea",
+                "unitCost": 400
+              },
+              {
+                "name": "burns",
+                "qty": 2,
+                "unit": "ea",
+                "unitCost": 100
+              },
+              {
+                "name": "velcro",
+                "qty": 6,
+                "unit": "ea",
+                "unitCost": 60
+              },
+              {
+                "name": "adhesive",
+                "qty": 2,
+                "unit": "ea",
+                "unitCost": 175
+              },
+              {
+                "name": "carpet padding per yard",
+                "qty": 25,
+                "unit": "ea",
+                "unitCost": 353
+              },
+              {
+                "name": "truett",
+                "qty": 200,
+                "unit": "ea",
+                "unitCost": 2
+              }
+            ]
+          },
+          {
+            "name": "spare carpet",
+            "hours": 0,
+            "materials": [
+              {
+                "name": "carpet",
+                "qty": 40,
+                "unit": "ea",
+                "unitCost": 400
+              },
+              {
+                "name": "burns",
+                "qty": 2,
+                "unit": "ea",
+                "unitCost": 100
+              },
+              {
+                "name": "velcro",
+                "qty": 6,
+                "unit": "ea",
+                "unitCost": 60
+              },
+              {
+                "name": "adhesive",
+                "qty": 2,
+                "unit": "ea",
+                "unitCost": 175
+              }
+            ]
+          },
+          {
+            "name": "remove and install carpet from cockpit to lavatory includes ducts and seat bases",
+            "hours": 400,
+            "materials": [
+              {
+                "name": "carpet",
+                "qty": 50,
+                "unit": "ea",
+                "unitCost": 400
+              },
+              {
+                "name": "burns",
+                "qty": 2,
+                "unit": "ea",
+                "unitCost": 100
+              },
+              {
+                "name": "velcro",
+                "qty": 6,
+                "unit": "ea",
+                "unitCost": 60
+              },
+              {
+                "name": "adhesive",
+                "qty": 2,
+                "unit": "ea",
+                "unitCost": 175
+              },
+              {
+                "name": "carpet padding per yard",
+                "qty": 25,
+                "unit": "ea",
+                "unitCost": 353
+              },
+              {
+                "name": "truett",
+                "qty": 200,
+                "unit": "ea",
+                "unitCost": 2
+              }
+            ]
+          },
+          {
+            "name": "spare carpet",
+            "hours": 270,
+            "materials": [
+              {
+                "name": "carpet",
+                "qty": 40,
+                "unit": "ea",
+                "unitCost": 400
+              },
+              {
+                "name": "burns",
+                "qty": 2,
+                "unit": "ea",
+                "unitCost": 100
+              },
+              {
+                "name": "velcro",
+                "qty": 6,
+                "unit": "ea",
+                "unitCost": 60
+              },
+              {
+                "name": "adhesive",
+                "qty": 2,
+                "unit": "ea",
+                "unitCost": 175
+              }
+            ]
+          }
+        ]
       }
     ],
     "knownParts": [
