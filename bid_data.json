@@ -3423,5 +3423,313 @@
       "toilet_assembly",
       "lower_side_panels"
     ]
+  },
+  "cessna550": {
+    "model": "Cessna 550",
+    "jobs": [
+      {
+        "date": "2024-01-02",
+        "tail": "N109JC",
+        "laborRate": 73,
+        "notes": "",
+        "parts": [
+          {
+            "name": "strip, refoam and recover cabin seats",
+            "hours": 0,
+            "materials": [
+              {
+                "name": "velcro",
+                "qty": 7,
+                "unit": "ea",
+                "unitCost": 40
+              },
+              {
+                "name": "adhesive",
+                "qty": 2,
+                "unit": "ea",
+                "unitCost": 150
+              },
+              {
+                "name": "misc materials",
+                "qty": 7,
+                "unit": "ea",
+                "unitCost": 50
+              },
+              {
+                "name": "DAX foam",
+                "qty": 7,
+                "unit": "ea",
+                "unitCost": 1500
+              },
+              {
+                "name": "belts",
+                "qty": 7,
+                "unit": "ea",
+                "unitCost": 250
+              },
+              {
+                "name": "leather",
+                "qty": 770,
+                "unit": "ea",
+                "unitCost": 10
+              },
+              {
+                "name": "shipping",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 500
+              }
+            ]
+          },
+          {
+            "name": "strip foam and recover toilet seat",
+            "hours": 0,
+            "materials": [
+              {
+                "name": "foam",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 250
+              },
+              {
+                "name": "misc",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 100
+              },
+              {
+                "name": "belt",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 250
+              },
+              {
+                "name": "burns",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 150
+              }
+            ]
+          },
+          {
+            "name": "burn testing fire blocking",
+            "hours": 12,
+            "materials": [
+              {
+                "name": "Aeroblaze",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 3650
+              },
+              {
+                "name": "additional leather",
+                "qty": 80,
+                "unit": "ea",
+                "unitCost": 10
+              },
+              {
+                "name": "additional material",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 400
+              }
+            ]
+          },
+          {
+            "name": "P/Cp crew seast",
+            "hours": 170,
+            "materials": [
+              {
+                "name": "foam",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 1500
+              },
+              {
+                "name": "belts",
+                "qty": 2,
+                "unit": "ea",
+                "unitCost": 350
+              },
+              {
+                "name": "leather",
+                "qty": 55,
+                "unit": "ea",
+                "unitCost": 10
+              },
+              {
+                "name": "shepskin",
+                "qty": 4,
+                "unit": "ea",
+                "unitCost": 100
+              },
+              {
+                "name": "burns",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 150
+              }
+            ]
+          },
+          {
+            "name": "strip and recover headliner",
+            "hours": 75,
+            "materials": [
+              {
+                "name": "ultra leather",
+                "qty": 8,
+                "unit": "ea",
+                "unitCost": 100
+              },
+              {
+                "name": "foam",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 350
+              },
+              {
+                "name": "adhesive",
+                "qty": 0.5,
+                "unit": "ea",
+                "unitCost": 160
+              },
+              {
+                "name": "burns",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 150
+              },
+              {
+                "name": "misc cleaning",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 300
+              }
+            ]
+          },
+          {
+            "name": "strip and redover window panels",
+            "hours": 135,
+            "materials": [
+              {
+                "name": "ultra leather",
+                "qty": 16,
+                "unit": "ea",
+                "unitCost": 100
+              },
+              {
+                "name": "foam",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 700
+              },
+              {
+                "name": "adhesive",
+                "qty": 0.5,
+                "unit": "ea",
+                "unitCost": 160
+              },
+              {
+                "name": "burns",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 150
+              },
+              {
+                "name": "misc cleaning",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 300
+              }
+            ]
+          },
+          {
+            "name": "strip and recover drink rail and lower side wall",
+            "hours": 84,
+            "materials": [
+              {
+                "name": "ultra leather",
+                "qty": 5,
+                "unit": "ea",
+                "unitCost": 100
+              }
+            ]
+          },
+          {
+            "name": "replace carpet in ccokpcpit, cabin and lav",
+            "hours": 130,
+            "materials": [
+              {
+                "name": "carpet",
+                "qty": 33,
+                "unit": "ea",
+                "unitCost": 265
+              },
+              {
+                "name": "velcro",
+                "qty": 2,
+                "unit": "ea",
+                "unitCost": 100
+              },
+              {
+                "name": "surging material",
+                "qty": 2,
+                "unit": "ea",
+                "unitCost": 50
+              },
+              {
+                "name": "shipping",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 400
+              },
+              {
+                "name": "misc",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 500
+              }
+            ]
+          },
+          {
+            "name": "wood work",
+            "hours": 200,
+            "materials": [
+              {
+                "name": "freeman",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 18000
+              },
+              {
+                "name": "burns",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 500
+              }
+            ]
+          },
+          {
+            "name": "removal and install",
+            "hours": 150,
+            "materials": []
+          }
+        ]
+      }
+    ],
+    "knownParts": [
+      "cabin_seats",
+      "toilet_assembly",
+      "entry_headliner",
+      "cabin_headliner",
+      "aft_headliner",
+      "window_panels",
+      "lower_side_panels",
+      "cockpit_carpet",
+      "cabin_carpet",
+      "crew_rest_carpet",
+      "seat_base_carpet",
+      "galley_woodwork"
+    ]
   }
 }
