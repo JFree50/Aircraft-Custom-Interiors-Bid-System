@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Aircraft Custom Interiors — Bid System</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<style>
+:root{
+  --bg:#0d1117;
+  --bg2:#161b22;
+  --bg3:#21262d;
+  --bg4:#30363d;
+  --border:#30363d;
+  --border2:#3d444d;
+  --text:#e6edf3;
+  --text2:#8b949e;
+  --text3:#484f58;
+  --blue:#1f6feb;
+  --blue2:#388bfd;
+  --blue-bg:rgba(31,111,235,.12);
+  --blue-border:rgba(31,111,235,.3);
+  --success:#3fb950;
+  --warn:#d29922;
+  --danger:#f85149;
+  --white:#ffffff;
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;min-height:100vh;font-size:14px;}
+.shell{display:flex;min-height:100vh;}
+
+/* SIDEBAR */
+.sidebar{width:220px;background:var(--bg2);border-right:1px solid var(--border);display:flex;flex-direction:column;flex-shrink:0;}
+.logo{padding:20px 18px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:10px;}
+.logo-icon{width:32px;height:32px;background:var(--blue);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;color:#fff;flex-shrink:0;}
+.logo-text .mark{font-size:10px;letter-spacing:.12em;color:var(--text2);text-transform:uppercase;font-weight:600;}
+.logo-text .name{font-size:13px;font-weight:700;color:var(--white);line-height:1.2;}
+.sidebar-nav{padding:12px 10px;flex:1;}
+.nav-section{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--text3);font-weight:600;padding:8px 10px 4px;}
+.nav-btn{display:flex;align-items:center;gap:9px;padding:8px 10px;border-radius:6px;cursor:pointer;font-size:13px;font-weight:500;color:var(--text2);background:none;border:none;width:100%;text-align:left;font-family:'Inter',sans-serif;margin-bottom:1px;transition:all .15s;}
+.nav-btn:hover{background:var(--bg3);color:var(--text);}
+.nav-btn.active{background:var(--blue-bg);color:var(--blue2);border:1px solid var(--blue-border);}
+.nav-btn svg{width:15px;height:15px;flex-shrink:0;}
+.sidebar-footer{padding:12px 14px;border-top:1px solid var(--border);font-size:11px;color:var(--text3);display:flex;align-items:center;gap:7px;}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--text3);flex-shrink:0;}
+.dot.ok{background:var(--success);}
+.dot.err{background:var(--danger);}
+.dot.loading{background:var(--warn);animation:pulse 1s infinite;}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+
+/* MAIN */
+.main{flex:1;overflow-y:auto;}
+.page{display:none;padding:32px 40px;max-width:960px;}
+.page.on{display:block;}
+.page-header{margin-bottom:28px;}
+.page-header h1{font-size:20px;font-weight:700;color:var(--white);margin-bottom:4px;}
+.page-header p{font-size:13px;color:var(--text2);}
+
+/* CARDS */
+.card{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:20px;margin-bottom:16px;}
+.card-header{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--text3);font-weight:600;margin-bottom:14px;padding-bottom:10px;border-bottom:1px solid var(--border);}
+
+/* FORMS */
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px;}
+.field{display:flex;flex-direction:column;gap:5px;}
+.field label{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--text2);font-weight:600;}
+input,select,textarea{background:var(--bg3);border:1px solid var(--border2);border-radius:6px;color:var(--text);font-family:'Inter',sans-serif;font-size:13px;padding:8px 11px;width:100%;outline:none;transition:border-color .15s;}
+input:focus,select:focus,textarea:focus{border-color:var(--blue);}
+select{cursor:pointer;}
+textarea{resize:vertical;min-height:60px;}
+input::placeholder,textarea::placeholder{color:var(--text3);}
+
+/* BUTTONS */
+.btn{padding:7px 16px;border-radius:6px;border:1px solid var(--border2);background:var(--bg3);cursor:pointer;font-size:13px;font-weight:500;color:var(--text);font-family:'Inter',sans-serif;transition:all .15s;display:inline-flex;align-items:center;gap:6px;}
+.btn:hover{background:var(--bg4);border-color:var(--border2);}
+.btn-blue{background:var(--blue);border-color:var(--blue);color:#fff;}
+.btn-blue:hover{background:#1a5ecb;border-color:#1a5ecb;}
+.btn-ghost{background:transparent;border-color:var(--border);color:var(--text2);}
+.btn-ghost:hover{background:var(--bg3);color:var(--text);}
+.btn-red{background:transparent;border-color:var(--danger);color:var(--danger);}
+.btn-red:hover{background:rgba(248,81,73,.1);}
+.btn-row{display:flex;gap:8px;margin-top:14px;align-items:center;flex-wrap:wrap;}
+.save-msg{font-size:12px;margin-left:auto;}
+
+/* STATUS BADGES */
+.badge{display:inline-block;font-size:11px;padding:2px 8px;border-radius:99px;font-weight:500;}
+.badge-blue{background:var(--blue-bg);color:var(--blue2);border:1px solid var(--blue-border);}
+.badge-green{background:rgba(63,185,80,.12);color:var(--success);border:1px solid rgba(63,185,80,.3);}
+.badge-warn{background:rgba(210,153,34,.12);color:var(--warn);border:1px solid rgba(210,153,34,.3);}
+
+/* METRICS */
+.metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin-bottom:20px;}
+.metric{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:16px;}
+.metric-label{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--text3);margin-bottom:6px;font-weight:600;}
+.metric-value{font-size:24px;font-weight:700;color:var(--white);}
+
+/* PLANE GRID */
+.plane-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:14px;}
+.pcard{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:18px;cursor:pointer;transition:all .15s;}
+.pcard:hover{border-color:var(--blue);background:var(--bg3);}
+.pcard-title{font-size:15px;font-weight:600;color:var(--white);margin-bottom:5px;}
+.pcard-sub{font-size:12px;color:var(--text2);margin-bottom:10px;}
+.chips{display:flex;flex-wrap:wrap;gap:4px;}
+.chip{font-size:10px;padding:2px 8px;border-radius:99px;background:var(--blue-bg);color:var(--blue2);font-weight:500;border:1px solid var(--blue-border);}
+
+/* DETAIL VIEW */
+.back-btn{background:none;border:none;cursor:pointer;color:var(--text2);font-size:13px;font-family:'Inter',sans-serif;font-weight:500;padding:0;margin-bottom:20px;display:inline-flex;align-items:center;gap:6px;}
+.back-btn:hover{color:var(--blue2);}
+.part-section{border:1px solid var(--border);border-radius:10px;margin-bottom:12px;overflow:hidden;}
+.part-bar{padding:12px 16px;background:var(--bg3);display:flex;justify-content:space-between;align-items:center;}
+.part-bar h3{font-size:13px;font-weight:600;color:var(--white);}
+.part-bar span{font-size:12px;color:var(--text2);}
+.part-body{padding:16px;}
+table{width:100%;border-collapse:collapse;margin-bottom:12px;}
+th{font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:var(--text3);font-weight:600;padding:6px 10px;text-align:left;border-bottom:1px solid var(--border);}
+td{font-size:13px;padding:8px 10px;border-bottom:1px solid var(--bg3);color:var(--text);}
+td.mono{font-family:'DM Mono',monospace;font-size:12px;}
+tr:last-child td{border-bottom:none;}
+.totals-bar{display:flex;gap:20px;flex-wrap:wrap;padding:10px 0 2px;border-top:1px solid var(--border);font-size:13px;}
+.tot .lbl{font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:var(--text3);margin-bottom:3px;font-weight:600;}
+.tot .val{font-weight:600;font-family:'DM Mono',monospace;color:var(--text);}
+.tot .val.blue{color:var(--blue2);}
+.warn-note{background:rgba(210,153,34,.08);border:1px solid rgba(210,153,34,.25);border-radius:6px;padding:8px 12px;font-size:12px;color:var(--warn);margin-bottom:12px;}
+.empty{text-align:center;padding:48px 20px;color:var(--text3);}
+
+/* PARTS FORM */
+.part-entry{background:var(--bg3);border:1px solid var(--border2);border-radius:10px;padding:14px;margin-bottom:12px;}
+.mat-heads{display:grid;grid-template-columns:2fr 80px 110px 110px 28px;gap:8px;margin-bottom:6px;padding:0 2px;}
+.mat-heads span{font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:var(--text3);font-weight:600;}
+.mat-row-input{display:grid;grid-template-columns:2fr 80px 110px 110px 28px;gap:8px;margin-bottom:6px;align-items:center;}
+.mat-row-input input{margin:0;}
+.rm-btn{background:none;border:none;cursor:pointer;color:var(--text3);font-size:16px;padding:0;line-height:1;transition:color .15s;}
+.rm-btn:hover{color:var(--danger);}
+.add-mat{background:none;border:1px dashed var(--border2);border-radius:6px;cursor:pointer;color:var(--text2);font-size:12px;padding:6px 12px;width:100%;font-family:'Inter',sans-serif;font-weight:500;margin-top:4px;transition:all .15s;}
+.add-mat:hover{border-color:var(--blue);color:var(--blue2);}
+.part-toolbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;}
+.section-lbl{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--text3);font-weight:600;}
+.quick-sel{background:var(--bg3);border:1px solid var(--blue-border);border-radius:6px;color:var(--blue2);font-family:'Inter',sans-serif;font-size:12px;font-weight:500;padding:7px 12px;cursor:pointer;width:auto;}
+
+/* UPLOAD */
+.drop-zone{border:2px dashed var(--border2);border-radius:10px;padding:40px 20px;text-align:center;cursor:pointer;transition:all .2s;background:var(--bg3);}
+.drop-zone:hover,.drop-zone.drag{border-color:var(--blue);background:var(--blue-bg);}
+.drop-zone-icon{font-size:36px;margin-bottom:12px;opacity:.5;}
+.drop-zone h3{font-size:15px;font-weight:600;color:var(--white);margin-bottom:6px;}
+.drop-zone p{font-size:13px;color:var(--text2);}
+#file-input{display:none;}
+.preview-table{background:var(--bg3);border:1px solid var(--border);border-radius:8px;overflow:hidden;margin-top:16px;}
+.preview-row{display:grid;grid-template-columns:1fr 1fr 1fr 80px;gap:12px;padding:10px 14px;border-bottom:1px solid var(--border);font-size:13px;align-items:center;}
+.preview-row:last-child{border-bottom:none;}
+.preview-head{font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:var(--text3);font-weight:600;background:var(--bg2);}
+
+/* GENERATE BID */
+.part-select-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;margin:14px 0;}
+.part-check{display:flex;align-items:center;gap:10px;background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:10px 14px;cursor:pointer;transition:all .15s;}
+.part-check:hover{border-color:var(--blue);}
+.part-check.selected{border-color:var(--blue);background:var(--blue-bg);}
+.part-check input[type=checkbox]{width:15px;height:15px;cursor:pointer;accent-color:var(--blue);}
+.part-check label{font-size:13px;font-weight:500;cursor:pointer;color:var(--text);}
+
+/* BID OUTPUT */
+.bid-output{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:24px;margin-top:16px;}
+.bid-header{border-bottom:2px solid var(--blue);padding-bottom:16px;margin-bottom:20px;}
+.bid-title{font-size:20px;font-weight:700;color:var(--white);margin-bottom:4px;}
+.bid-meta{font-size:13px;color:var(--text2);}
+.bid-part{margin-bottom:20px;}
+.bid-part-title{font-size:14px;font-weight:600;color:var(--white);background:var(--bg3);padding:8px 12px;border-radius:6px;margin-bottom:10px;border-left:3px solid var(--blue);}
+.bid-totals{background:var(--bg3);border:1px solid var(--border);border-radius:8px;padding:16px;margin-top:16px;}
+.bid-total-row{display:flex;justify-content:space-between;padding:6px 0;font-size:14px;border-bottom:1px solid var(--border);}
+.bid-total-row:last-child{border-bottom:none;font-weight:700;font-size:16px;color:var(--white);}
+.bid-total-row span:last-child{font-family:'DM Mono',monospace;}
+
+/* DIVIDER */
+hr{border:none;border-top:1px solid var(--border);margin:16px 0;}
+
+@media(max-width:700px){
+  .sidebar{width:56px;}
+  .logo-text,.nav-btn span,.sidebar-footer span{display:none;}
+  .logo{justify-content:center;}
+  .nav-btn{justify-content:center;padding:10px;}
+  .page{padding:20px 16px;}
+  .frow{grid-template-columns:1fr;}
+  .mat-row-input,.mat-heads{grid-template-columns:1fr 60px 80px 80px 28px;}
+}
+
+/* PRINT */
+@media print{
+  .sidebar,.nav-btn,.back-btn,.btn,.btn-row,.no-print{display:none!important;}
+  .main{overflow:visible;}
+  .page{display:block!important;padding:0;}
+  body{background:#fff;color:#000;}
+  .bid-output{border:none;padding:0;}
+  .bid-header{border-bottom:2px solid #1f3a5f;}
+  .bid-title{color:#1f3a5f;}
+  th{color:#666;}
+  .bid-part-title{background:#eef2f7;color:#1f3a5f;border-left:3px solid #1f6feb;}
+  .bid-totals{background:#f9f9f9;}
+}
+</style>
+</head>
+<body>
+<div class="shell">
+<nav class="sidebar">
+  <div class="logo">
+    <div class="logo-icon">ACI</div>
+    <div class="logo-text"><div class="mark">Interiors</div><div class="name">Bid System</div></div>
+  </div>
+  <div class="sidebar-nav">
+    <div class="nav-section">Main</div>
+    <button class="nav-btn active" onclick="nav('lookup')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg><span>Look Up</span>
+    </button>
+    <button class="nav-btn" onclick="nav('generate')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg><span>Generate Bid</span>
+    </button>
+    <div class="nav-section">Data</div>
+    <button class="nav-btn" onclick="nav('upload')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16,16 12,12 8,16"/><line x1="12" y1="12" x2="12" y2="21"/><path d="M20.39 18.39A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.3"/></svg><span>Upload Bid</span>
+    </button>
+    <button class="nav-btn" onclick="nav('enter')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12h14"/></svg><span>Enter Bid</span>
+    </button>
+    <button class="nav-btn" onclick="nav('all')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg><span>All Planes</span>
+    </button>
+    <div class="nav-section">System</div>
+    <button class="nav-btn" onclick="nav('settings')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg><span>Settings</span>
+    </button>
+  </div>
+  <div class="sidebar-footer"><div class="dot loading" id="dot"></div><span id="gh-lbl">Connecting…</span></div>
+</nav>
+
+<main class="main">
+
+<!-- LOOK UP -->
+<div class="page on" id="page-lookup">
+  <div id="view-search">
+    <div class="page-header"><h1>Look Up</h1><p>Search by plane model or interior part</p></div>
+    <input type="text" id="lu-q" placeholder="Search — Challenger 604, seats, carpet…" oninput="renderSearch()" style="margin-bottom:20px;"/>
+    <div id="search-results"></div>
+  </div>
+  <div id="view-detail" style="display:none;"></div>
+</div>
+
+<!-- GENERATE BID -->
+<div class="page" id="page-generate">
+  <div class="page-header"><h1>Generate Bid</h1><p>Select a plane and parts to create a new bid</p></div>
+  <div class="card">
+    <div class="card-header">Step 1 — Plane & Job Details</div>
+    <div class="frow">
+      <div class="field"><label>Plane Model *</label>
+        <select id="g-plane" onchange="loadGenParts()">
+          <option value="">Select a plane…</option>
+        </select>
+      </div>
+      <div class="field"><label>Current Labor Rate ($/hr) *</label><input id="g-rate" type="number" placeholder="95"/></div>
+    </div>
+    <div class="frow">
+      <div class="field"><label>Client / Job Name</label><input id="g-client" placeholder="e.g. Smith Aviation"/></div>
+      <div class="field"><label>Bid Date</label><input id="g-date" type="date"/></div>
+    </div>
+    <div class="field"><label>Notes</label><textarea id="g-notes" placeholder="Any special instructions or scope notes…"></textarea></div>
+  </div>
+  <div class="card" id="g-parts-card" style="display:none;">
+    <div class="card-header">Step 2 — Select Parts to Include</div>
+    <div class="part-select-grid" id="g-parts-grid"></div>
+    <div class="btn-row no-print">
+      <button class="btn" onclick="selectAll()">Select All</button>
+      <button class="btn" onclick="selectNone()">Clear</button>
+    </div>
+  </div>
+  <div class="card" id="g-rate-adj-card" style="display:none;">
+    <div class="card-header">Step 3 — Material Cost Adjustment</div>
+    <div class="frow">
+      <div class="field"><label>Material Cost Adjustment (%)</label><input id="g-mat-adj" type="number" placeholder="0" value="0"/></div>
+      <div class="field"><label>Markup on Materials (%)</label><input id="g-markup" type="number" placeholder="15" value="15"/></div>
+    </div>
+    <p style="font-size:12px;color:var(--text2);margin-top:4px;">Use the adjustment to account for price changes since the original bid. Markup is added on top of adjusted material costs.</p>
+  </div>
+  <div class="btn-row no-print" id="g-gen-row" style="display:none;">
+    <button class="btn btn-blue" onclick="generateBid()">Generate Bid</button>
+  </div>
+  <div id="bid-output-wrap"></div>
+</div>
+
+<!-- UPLOAD BID -->
+<div class="page" id="page-upload">
+  <div class="page-header"><h1>Upload Bid File</h1><p>Drop an Excel (.xls / .xlsx) bid spreadsheet to import it directly</p></div>
+  <div class="card">
+    <div class="card-header">Upload File</div>
+    <div class="drop-zone" id="drop-zone" onclick="document.getElementById('file-input').click()" ondragover="doDragOver(event)" ondragleave="doDragLeave(event)" ondrop="doDrop(event)">
+      <div class="drop-zone-icon">📂</div>
+      <h3>Click to browse or drag & drop</h3>
+      <p>Supports .xls and .xlsx files from your existing bid format</p>
+    </div>
+    <input type="file" id="file-input" accept=".xls,.xlsx" onchange="handleFileSelect(event)"/>
+  </div>
+  <div id="upload-preview" style="display:none;">
+    <div class="card">
+      <div class="card-header">Review Extracted Data</div>
+      <div class="frow">
+        <div class="field"><label>Plane Model *</label><input id="u-model" placeholder="e.g. Challenger 604"/></div>
+        <div class="field"><label>Job Date *</label><input id="u-date" type="date"/></div>
+      </div>
+      <div class="frow">
+        <div class="field"><label>Tail Number</label><input id="u-tail" placeholder="N12345"/></div>
+        <div class="field"><label>Labor Rate at Time of Bid ($/hr)</label><input id="u-rate" type="number" placeholder="85"/></div>
+      </div>
+      <div class="field"><label>Notes — Flag Outdated Info</label><textarea id="u-notes" placeholder="Material costs from 2022, labor rate has changed…"></textarea></div>
+    </div>
+    <div class="card">
+      <div class="card-header">Extracted Parts & Materials</div>
+      <div id="upload-parts-preview"></div>
+    </div>
+    <div class="btn-row">
+      <button class="btn btn-blue" onclick="confirmUpload()">Save to GitHub</button>
+      <button class="btn btn-ghost" onclick="cancelUpload()">Cancel</button>
+      <span class="save-msg" id="upload-msg"></span>
+    </div>
+  </div>
+</div>
+
+<!-- ENTER BID -->
+<div class="page" id="page-enter">
+  <div class="page-header"><h1>Enter Bid Data</h1><p>Manually log a past job</p></div>
+  <div class="card">
+    <div class="card-header">Plane & Job Info</div>
+    <div class="frow">
+      <div class="field"><label>Plane Model *</label><input id="e-model" placeholder="Challenger 604, Gulfstream G550…"/></div>
+      <div class="field"><label>Job Date *</label><input id="e-date" type="date"/></div>
+    </div>
+    <div class="frow">
+      <div class="field"><label>Tail Number</label><input id="e-tail" placeholder="N12345"/></div>
+      <div class="field"><label>Labor Rate ($/hr)</label><input id="e-rate" type="number" placeholder="90"/></div>
+    </div>
+    <div class="field"><label>Notes</label><textarea id="e-notes" placeholder="Flag anything outdated…"></textarea></div>
+  </div>
+  <div class="part-toolbar">
+    <div class="section-lbl">Parts Worked On</div>
+    <select class="quick-sel" id="quick-add" onchange="quickAdd(this)">
+      <option value="">+ Quick Add Part</option>
+      <option>Seats</option><option>Divan</option><option>Headliner</option>
+      <option>Side Panels</option><option>Closet</option><option>Carpet</option>
+      <option>Bulkhead</option><option>Galley</option><option>Window Reveals</option>
+      <option>Armrests</option><option>Cabinet</option><option>Lavatory</option>
+      <option>Floor Panels</option><option>Crew Seat</option><option>Custom…</option>
+    </select>
+  </div>
+  <div id="parts-container"></div>
+  <div class="btn-row">
+    <button class="btn btn-blue" onclick="saveJob()">Save to GitHub</button>
+    <button class="btn btn-ghost" onclick="clearForm()">Clear</button>
+    <span class="save-msg" id="save-msg"></span>
+  </div>
+</div>
+
+<!-- ALL PLANES -->
+<div class="page" id="page-all">
+  <div class="page-header" style="display:flex;justify-content:space-between;align-items:flex-start;">
+    <div><h1>All Planes</h1><p>Every aircraft in your repo</p></div>
+    <button class="btn btn-ghost" onclick="loadGH()">↺ Refresh</button>
+  </div>
+  <div id="all-list"></div>
+</div>
+
+<!-- SETTINGS -->
+<div class="page" id="page-settings">
+  <div class="page-header"><h1>Settings</h1><p>GitHub connection & token</p></div>
+  <div class="card">
+    <div class="card-header">GitHub Connection</div>
+    <div class="frow">
+      <div class="field"><label>Username</label><input id="s-user" placeholder="JFree50"/></div>
+      <div class="field"><label>Repository Name (exact)</label><input id="s-repo" placeholder="Aircraft-Custom-Interiors-Bid-System"/></div>
+    </div>
+    <div class="field" style="margin-bottom:16px;"><label>Personal Access Token</label><input id="s-token" type="password" placeholder="ghp_…"/></div>
+    <div class="btn-row">
+      <button class="btn btn-blue" onclick="saveSettings()">Save & Reconnect</button>
+      <button class="btn btn-ghost" onclick="loadGH()">Test Connection</button>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header">About</div>
+    <p style="font-size:13px;color:var(--text2);line-height:1.7;">Data is stored as <code style="font-family:'DM Mono',monospace;font-size:12px;color:var(--blue2);">bid_data.json</code> in your private GitHub repository. Each plane model is kept completely separate. Token is stored in your browser's local storage on this device only.</p>
+  </div>
+</div>
+
+</main>
+</div>
+
+<script>
+const CONF='aci_v5';
+const FILE='bid_data.json';
+let gData={};
+let cfg={};
+let pc=0;
+let uploadedParts=[];
+
+// ── Storage ───────────────────────────────────────────
+function lc(){try{return JSON.parse(localStorage.getItem(CONF)||'{}')}catch{return {}}}
+function sc(c){localStorage.setItem(CONF,JSON.stringify(c))}
+
+// ── GitHub API ────────────────────────────────────────
+function apiUrl(){return`https://api.github.com/repos/${cfg.user}/${cfg.repo}/contents/${FILE}`}
+function hdrs(){return{'Authorization':'token '+cfg.token,'Accept':'application/vnd.github.v3+json','Content-Type':'application/json'}}
+
+function setStatus(type,msg){
+  document.getElementById('dot').className='dot '+type;
+  document.getElementById('gh-lbl').textContent=msg;
+}
+
+async function loadGH(){
+  setStatus('loading','Connecting…');
+  try{
+    const r=await fetch(apiUrl(),{headers:hdrs()});
+    if(r.status===404){gData={};setStatus('ok','Connected — no data yet');renderSearch();renderAll();populatePlaneSelect();return;}
+    if(r.status===401){setStatus('err','Bad token');return;}
+    if(!r.ok)throw new Error('HTTP '+r.status);
+    const j=await r.json();
+    gData=JSON.parse(atob(j.content.replace(/\n/g,'')));
+    setStatus('ok',cfg.user+'/'+cfg.repo);
+    renderSearch();renderAll();populatePlaneSelect();
+  }catch(e){setStatus('err',e.message);}
+}
+
+async function saveGH(){
+  const content=btoa(unescape(encodeURIComponent(JSON.stringify(gData,null,2))));
+  let sha=null;
+  try{const r=await fetch(apiUrl(),{headers:hdrs()});if(r.ok){const j=await r.json();sha=j.sha;}}catch{}
+  const body={message:'Update bid data',content};
+  if(sha)body.sha=sha;
+  const r=await fetch(apiUrl(),{method:'PUT',headers:hdrs(),body:JSON.stringify(body)});
+  if(!r.ok)throw new Error('HTTP '+r.status);
+}
+
+// ── Navigation ────────────────────────────────────────
+function nav(name){
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('on'));
+  document.querySelectorAll('.nav-btn').forEach(b=>b.classList.remove('active'));
+  document.getElementById('page-'+name).classList.add('on');
+  const idx={lookup:0,generate:1,upload:2,enter:3,all:4,settings:5}[name];
+  document.querySelectorAll('.nav-btn')[idx].classList.add('active');
+  if(name==='all')renderAll();
+  if(name==='generate')populatePlaneSelect();
+  if(name==='lookup'&&!window._skipLookupReset){
+    document.getElementById('view-search').style.display='block';
+    document.getElementById('view-detail').style.display='none';
+    renderSearch();
+  }
+  window._skipLookupReset=false;
+}
+
+function showSearch(){
+  document.getElementById('view-search').style.display='block';
+  document.getElementById('view-detail').style.display='none';
+  renderSearch();
+}
+
+// ── Look Up ───────────────────────────────────────────
+function renderSearch(){
+  const q=(document.getElementById('lu-q')||{}).value?.toLowerCase().trim()||'';
+  const planes=Object.values(gData);
+  const res=document.getElementById('search-results');
+  if(!res)return;
+  if(!planes.length){res.innerHTML='<div class="empty">No data yet — upload or enter a bid to get started.</div>';return;}
+  const filtered=q?planes.filter(p=>p.model.toLowerCase().includes(q)||(p.jobs||[]).some(j=>(j.parts||[]).some(pt=>pt.name.toLowerCase().includes(q)))):planes;
+  if(!filtered.length){res.innerHTML='<div class="empty">No matches found.</div>';return;}
+  res.innerHTML='<div class="plane-grid">'+filtered.map(p=>{
+    const jobs=p.jobs||[];
+    const parts=[...new Set(jobs.flatMap(j=>(j.parts||[]).map(pt=>pt.name)))];
+    const mk=mkey(p.model);
+    return`<div class="pcard" data-mk="${mk}">
+      <div class="pcard-title">${p.model}</div>
+      <div class="pcard-sub">${jobs.length} job${jobs.length!==1?'s':''} · ${parts.length} part${parts.length!==1?'s':''}</div>
+      <div class="chips">${parts.slice(0,5).map(n=>`<span class="chip">${n}</span>`).join('')}${parts.length>5?`<span class="chip">+${parts.length-5}</span>`:''}</div>
+    </div>`;
+  }).join('')+'</div>';
+}
+
+function showDetail(mk){
+  const plane=gData[mk];if(!plane)return;
+  const det=document.getElementById('view-detail');
+  const search=document.getElementById('view-search');
+  search.style.display='none';
+  det.style.display='block';
+  const jobs=plane.jobs||[];
+  const allParts=[...new Set(jobs.flatMap(j=>(j.parts||[]).map(p=>p.name)))];
+  const latest=jobs.slice().sort((a,b)=>b.date.localeCompare(a.date))[0];
+  const partHTML=allParts.map(pn=>{
+    const entries=jobs.flatMap(j=>{
+      const m=(j.parts||[]).find(p=>p.name===pn);if(!m)return[];
+      return[{date:j.date,tail:j.tail,rate:m.rateOverride||j.laborRate,hours:m.hours,mats:m.materials||[],notes:j.notes}];
+    }).sort((a,b)=>b.date.localeCompare(a.date));
+    if(!entries.length)return'';
+    const e=entries[0];
+    const matTotal=e.mats.reduce((s,m)=>s+m.qty*m.unitCost,0);
+    const laborCost=e.rate?e.hours*e.rate:null;
+    const rows=e.mats.map(m=>`<tr><td>${m.name}</td><td class="mono">${m.qty} ${m.unit}</td><td class="mono">$${m.unitCost.toFixed(2)}</td><td class="mono">$${(m.qty*m.unitCost).toFixed(2)}</td></tr>`).join('');
+    return`<div class="part-section">
+      <div class="part-bar"><h3>${pn}</h3><span>${e.hours} hrs · ${e.mats.length} materials · ${e.date}</span></div>
+      <div class="part-body">
+        ${e.notes?`<div class="warn-note">⚠ ${e.notes}</div>`:''}
+        <table><thead><tr><th>Material</th><th>Qty</th><th>Unit Cost</th><th>Line Total</th></tr></thead>
+        <tbody>${rows||'<tr><td colspan="4" style="color:var(--text3)">No materials recorded</td></tr>'}</tbody></table>
+        <div class="totals-bar">
+          <div class="tot"><div class="lbl">Labor Hours</div><div class="val">${e.hours}</div></div>
+          ${e.rate?`<div class="tot"><div class="lbl">Rate</div><div class="val">$${e.rate}/hr</div></div><div class="tot"><div class="lbl">Labor</div><div class="val">$${(e.hours*e.rate).toFixed(2)}</div></div>`:''}
+          <div class="tot"><div class="lbl">Materials</div><div class="val">$${matTotal.toFixed(2)}</div></div>
+          ${laborCost!==null?`<div class="tot"><div class="lbl">Part Total</div><div class="val blue">$${(laborCost+matTotal).toFixed(2)}</div></div>`:''}
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+  det.innerHTML=`
+    <button class="back-btn" onclick="showSearch()">← Back to search</button>
+    <div class="page-header"><h1>${plane.model}</h1><p>${jobs.length} job${jobs.length!==1?'s':''} on record · Latest: ${latest?.date||'—'} · Tail: ${latest?.tail||'—'}</p></div>
+    <div class="metrics">
+      <div class="metric"><div class="metric-label">Jobs</div><div class="metric-value">${jobs.length}</div></div>
+      <div class="metric"><div class="metric-label">Parts Tracked</div><div class="metric-value">${allParts.length}</div></div>
+      <div class="metric"><div class="metric-label">Latest Job</div><div class="metric-value" style="font-size:15px;">${latest?.date||'—'}</div></div>
+    </div>
+    ${partHTML||'<div class="empty">No parts recorded.</div>'}
+    <div class="btn-row" style="margin-top:20px;">
+      <button class="btn btn-red" onclick="deletePlane('${mk}')">Delete Plane</button>
+    </div>`;
+}
+
+function renderAll(){
+  const planes=Object.values(gData);
+  const el=document.getElementById('all-list');if(!el)return;
+  if(!planes.length){el.innerHTML='<div class="empty">No planes yet.</div>';return;}
+  el.innerHTML='<div class="plane-grid">'+planes.map(p=>{
+    const parts=[...new Set((p.jobs||[]).flatMap(j=>(j.parts||[]).map(pt=>pt.name)))];
+    const mk=mkey(p.model);
+    return`<div class="pcard" data-mk="${mk}" data-nav="true">
+      <div class="pcard-title">${p.model}</div>
+      <div class="pcard-sub">${(p.jobs||[]).length} job${(p.jobs||[]).length!==1?'s':''}</div>
+      <div class="chips">${parts.map(n=>`<span class="chip">${n}</span>`).join('')}</div>
+    </div>`;
+  }).join('')+'</div>';
+}
+
+function navToDetail(mk){
+  window._skipLookupReset=true;
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('on'));
+  document.querySelectorAll('.nav-btn').forEach(b=>b.classList.remove('active'));
+  document.getElementById('page-lookup').classList.add('on');
+  document.querySelectorAll('.nav-btn')[0].classList.add('active');
+  showDetail(mk);
+}
+
+// ── Generate Bid ──────────────────────────────────────
+function populatePlaneSelect(){
+  const sel=document.getElementById('g-plane');if(!sel)return;
+  const cur=sel.value;
+  sel.innerHTML='<option value="">Select a plane…</option>';
+  Object.values(gData).forEach(p=>{
+    const o=document.createElement('option');
+    o.value=mkey(p.model);o.textContent=p.model;
+    sel.appendChild(o);
+  });
+  if(cur)sel.value=cur;
+}
+
+function loadGenParts(){
+  const mk=document.getElementById('g-plane').value;
+  const partsCard=document.getElementById('g-parts-card');
+  const rateCard=document.getElementById('g-rate-adj-card');
+  const genRow=document.getElementById('g-gen-row');
+  document.getElementById('bid-output-wrap').innerHTML='';
+  if(!mk){partsCard.style.display='none';rateCard.style.display='none';genRow.style.display='none';return;}
+  const plane=gData[mk];if(!plane){return;}
+  const jobs=plane.jobs||[];
+  const allParts=[...new Set(jobs.flatMap(j=>(j.parts||[]).map(p=>p.name)))];
+  const grid=document.getElementById('g-parts-grid');
+  grid.innerHTML=allParts.map(pn=>`
+    <div class="part-check selected" id="pc-${sanitize(pn)}" onclick="togglePart(this)">
+      <input type="checkbox" checked onchange="togglePart(this.closest('.part-check'))"/>
+      <label>${pn}</label>
+    </div>`).join('');
+  partsCard.style.display='block';
+  rateCard.style.display='block';
+  genRow.style.display='flex';
+}
+
+function togglePart(el){
+  el.classList.toggle('selected');
+  el.querySelector('input').checked=el.classList.contains('selected');
+}
+function selectAll(){document.querySelectorAll('.part-check').forEach(el=>{el.classList.add('selected');el.querySelector('input').checked=true;});}
+function selectNone(){document.querySelectorAll('.part-check').forEach(el=>{el.classList.remove('selected');el.querySelector('input').checked=false;});}
+
+function generateBid(){
+  const mk=document.getElementById('g-plane').value;
+  const rate=parseFloat(document.getElementById('g-rate').value);
+  const client=document.getElementById('g-client').value.trim();
+  const date=document.getElementById('g-date').value||today();
+  const notes=document.getElementById('g-notes').value.trim();
+  const matAdj=parseFloat(document.getElementById('g-mat-adj').value)||0;
+  const markup=parseFloat(document.getElementById('g-markup').value)||15;
+  if(!mk){alert('Select a plane.');return;}
+  if(!rate){alert('Enter the current labor rate.');return;}
+  const plane=gData[mk];if(!plane)return;
+  const selected=Array.from(document.querySelectorAll('.part-check.selected')).map(el=>el.querySelector('label').textContent);
+  if(!selected.length){alert('Select at least one part.');return;}
+  const jobs=plane.jobs||[];
+  let grandMatTotal=0,grandLaborTotal=0;
+  const partsHTML=selected.map(pn=>{
+    const entries=jobs.flatMap(j=>{
+      const m=(j.parts||[]).find(p=>p.name===pn);if(!m)return[];
+      return[{hours:m.hours,mats:m.materials||[]}];
+    });
+    if(!entries.length)return'';
+    const e=entries[entries.length-1];
+    const laborCost=e.hours*rate;
+    const adjFactor=1+(matAdj/100);
+    const markupFactor=1+(markup/100);
+    const matRows=e.mats.map(m=>{
+      const adjCost=m.unitCost*adjFactor;
+      const lineTotal=m.qty*adjCost*markupFactor;
+      grandMatTotal+=lineTotal;
+      return`<tr><td>${m.name}</td><td class="mono">${m.qty} ${m.unit}</td><td class="mono">$${adjCost.toFixed(2)}</td><td class="mono">$${lineTotal.toFixed(2)}</td></tr>`;
+    }).join('');
+    grandLaborTotal+=laborCost;
+    return`<div class="bid-part">
+      <div class="bid-part-title">${pn}</div>
+      <table><thead><tr><th>Material</th><th>Qty</th><th>Unit Cost</th><th>Line Total</th></tr></thead>
+      <tbody>${matRows||'<tr><td colspan="4" style="color:var(--text3)">No materials on record</td></tr>'}</tbody></table>
+      <div class="totals-bar">
+        <div class="tot"><div class="lbl">Labor Hours</div><div class="val">${e.hours}</div></div>
+        <div class="tot"><div class="lbl">Labor Cost</div><div class="val">$${laborCost.toFixed(2)}</div></div>
+      </div>
+    </div>`;
+  }).join('');
+  const grandTotal=grandMatTotal+grandLaborTotal;
+  document.getElementById('bid-output-wrap').innerHTML=`
+    <div class="bid-output" id="bid-output">
+      <div class="bid-header">
+        <div class="bid-title">Aircraft Interior Bid — ${plane.model}</div>
+        <div class="bid-meta">${client?'Client: '+client+' · ':''}Date: ${date}${notes?' · '+notes:''}</div>
+      </div>
+      ${partsHTML}
+      <div class="bid-totals">
+        <div class="bid-total-row"><span>Materials Subtotal (with ${markup}% markup)</span><span>$${grandMatTotal.toFixed(2)}</span></div>
+        <div class="bid-total-row"><span>Labor Total (${rate}/hr)</span><span>$${grandLaborTotal.toFixed(2)}</span></div>
+        <div class="bid-total-row"><span>Grand Total</span><span>$${grandTotal.toFixed(2)}</span></div>
+      </div>
+    </div>
+    <div class="btn-row no-print" style="margin-top:16px;">
+      <button class="btn btn-blue" onclick="window.print()">🖨 Print / Save as PDF</button>
+      <button class="btn btn-ghost" onclick="document.getElementById('bid-output-wrap').innerHTML=''">Clear</button>
+    </div>`;
+  document.getElementById('bid-output-wrap').scrollIntoView({behavior:'smooth'});
+}
+
+// ── Upload ────────────────────────────────────────────
+function doDragOver(e){e.preventDefault();document.getElementById('drop-zone').classList.add('drag');}
+function doDragLeave(){document.getElementById('drop-zone').classList.remove('drag');}
+function doDrop(e){e.preventDefault();doDragLeave();const f=e.dataTransfer.files[0];if(f)processFile(f);}
+function handleFileSelect(e){const f=e.target.files[0];if(f)processFile(f);}
+
+function processFile(file){
+  const reader=new FileReader();
+  reader.onload=function(e){
+    try{
+      const wb=XLSX.read(e.target.result,{type:'array'});
+      const ws=wb.Sheets[wb.SheetNames[0]];
+      const rows=XLSX.utils.sheet_to_json(ws,{header:1,defval:''});
+      parseAndPreview(rows,file.name);
+    }catch(err){alert('Could not read file: '+err.message);}
+  };
+  reader.readAsArrayBuffer(file);
+}
+
+function parseAndPreview(rows,filename){
+  // Parse tasks from the spreadsheet using the known format
+  uploadedParts=[];
+  let currentPart=null;
+  let laborHours=0;
+
+  for(let i=0;i<rows.length;i++){
+    const row=rows[i];
+    const col0=String(row[0]||'').trim();
+    const col1=String(row[1]||'').trim();
+    const col2=String(row[2]||'').trim();
+    const col3=String(row[3]||'').trim();
+    const col4=String(row[4]||'').trim();
+    const col5=String(row[5]||'').trim();
+
+    // Detect task header row (col0 is a number, col1 is 'Task')
+    if(col1==='Task'&&col2&&col2!=='Description'){
+      if(currentPart)uploadedParts.push(currentPart);
+      laborHours=0;
+      currentPart={name:col2,hours:0,materials:[]};
+    }
+
+    // Detect Labor Hours label
+    if(col5==='Labor Hours'||col0==='Labor Hours'){
+      const nextRow=rows[i+1];
+      if(nextRow){
+        const lh=parseFloat(nextRow[5]||nextRow[0])||0;
+        if(lh&&currentPart)currentPart.hours=lh;
+      }
+    }
+
+    // Detect material rows (col1 is a number qty, col2 is description, col3 is unit cost, col4 is total)
+    if(currentPart&&col1&&!isNaN(parseFloat(col1))&&col2&&col2!=='Description'&&col2!=='Material Subtotal'&&col2!=='15% Material markup'&&col2!=='Material Cost Total'&&col2!=='Labor Cost Total'&&col2!=='Total labor Cost'&&col2!=='Grand Total'&&col2!=='5% Commission'&&col2!=='8% Commission'){
+      const qty=parseFloat(col1)||0;
+      const unitCost=parseFloat(col3)||0;
+      if(col2&&qty>0){
+        currentPart.materials.push({name:col2,qty,unit:'ea',unitCost});
+      }
+    }
+  }
+  if(currentPart)uploadedParts.push(currentPart);
+
+  // Set filename-based tail suggestion
+  const tailMatch=filename.match(/N\d+[A-Z]*/i);
+  if(tailMatch)document.getElementById('u-tail').value=tailMatch[0].toUpperCase();
+  document.getElementById('u-date').value=today();
+
+  // Render preview
+  const preview=document.getElementById('upload-parts-preview');
+  if(!uploadedParts.length){preview.innerHTML='<div class="empty">Could not extract any parts from this file. Make sure it matches the expected bid format.</div>';return;}
+  preview.innerHTML=uploadedParts.map((p,i)=>`
+    <div class="part-section" style="margin-bottom:10px;">
+      <div class="part-bar"><h3>${p.name}</h3><span>${p.hours} hrs · ${p.materials.length} materials</span></div>
+      <div class="part-body">
+        <table><thead><tr><th>Material</th><th>Qty</th><th>Unit Cost</th></tr></thead>
+        <tbody>${p.materials.slice(0,5).map(m=>`<tr><td>${m.name}</td><td class="mono">${m.qty}</td><td class="mono">$${m.unitCost.toFixed(2)}</td></tr>`).join('')}
+        ${p.materials.length>5?`<tr><td colspan="3" style="color:var(--text3)">+ ${p.materials.length-5} more materials…</td></tr>`:''}</tbody></table>
+      </div>
+    </div>`).join('');
+
+  document.getElementById('upload-preview').style.display='block';
+  document.getElementById('upload-preview').scrollIntoView({behavior:'smooth'});
+}
+
+async function confirmUpload(){
+  const model=document.getElementById('u-model').value.trim();
+  const date=document.getElementById('u-date').value;
+  if(!model||!date){alert('Plane model and date are required.');return;}
+  if(!uploadedParts.length){alert('No parts to save.');return;}
+  const mk=mkey(model);
+  if(!gData[mk])gData[mk]={model,jobs:[]};
+  gData[mk].jobs.push({
+    date,
+    tail:document.getElementById('u-tail').value.trim(),
+    laborRate:parseFloat(document.getElementById('u-rate').value)||null,
+    notes:document.getElementById('u-notes').value.trim(),
+    parts:uploadedParts
+  });
+  const msg=document.getElementById('upload-msg');
+  msg.style.color='var(--warn)';msg.textContent='Saving…';
+  try{
+    await saveGH();
+    msg.style.color='var(--success)';msg.textContent='Saved to GitHub ✓';
+    populatePlaneSelect();
+    setTimeout(()=>{document.getElementById('upload-preview').style.display='none';document.getElementById('upload-msg').textContent='';document.getElementById('file-input').value='';uploadedParts=[];},2500);
+  }catch(e){msg.style.color='var(--danger)';msg.textContent='Failed: '+e.message;}
+}
+
+function cancelUpload(){
+  document.getElementById('upload-preview').style.display='none';
+  document.getElementById('file-input').value='';
+  uploadedParts=[];
+}
+
+// ── Enter Bid ─────────────────────────────────────────
+const MATS={
+  'Seats':'Leather / fabric,Foam,Piping / welt cord,Thread,Velcro,Adhesive',
+  'Divan':'Leather / fabric,Foam,Piping / welt cord,Thread,Velcro,Adhesive,Plywood substrate',
+  'Headliner':'Headliner fabric,Foam backing,Spray adhesive,Velcro,Trim strips',
+  'Side Panels':'Leather / vinyl,Foam,Adhesive,Velcro,Trim strips,Fasteners',
+  'Closet':'Leather / vinyl,Plywood substrate,Hinges,Latches,Adhesive,Fasteners',
+  'Carpet':'Carpet,Adhesive / carpet tape,Edge binding,Velcro',
+  'Bulkhead':'Leather / vinyl,Foam,Plywood substrate,Adhesive,Fasteners,Trim strips',
+  'Galley':'Leather / vinyl,Plywood substrate,Hinges,Latches,Fasteners,Adhesive',
+  'Window Reveals':'Leather / vinyl,Foam,Adhesive,Velcro',
+  'Armrests':'Leather / fabric,Foam,Adhesive,Thread,Velcro',
+  'Cabinet':'Plywood substrate,Leather / vinyl,Hinges,Latches,Fasteners,Adhesive',
+  'Lavatory':'Leather / vinyl,Foam,Adhesive,Fasteners,Trim strips',
+  'Floor Panels':'Carpet,Plywood substrate,Adhesive,Fasteners,Edge binding',
+  'Crew Seat':'Leather / fabric,Foam,Piping / welt cord,Thread,Velcro,Adhesive',
+};
+
+function quickAdd(sel){const v=sel.value;sel.value='';if(!v)return;const n=v==='Custom…'?prompt('Part name:'):v;if(n)addPart(n);}
+
+function addPart(name){
+  pc++;const id='pe-'+pc;
+  const div=document.createElement('div');div.className='part-entry';div.id=id;
+  const mats=(MATS[name]||'Material').split(',');
+  div.innerHTML=`
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;">
+      <input class="pname" value="${name}" style="flex:1;margin-right:10px;font-weight:600;font-size:14px;"/>
+      <button class="rm-btn" onclick="this.closest('.part-entry').remove()">✕</button>
+    </div>
+    <div class="frow" style="margin-bottom:10px;">
+      <div class="field"><label>Labor Hours</label><input class="phours" type="number" placeholder="8"/></div>
+      <div class="field"><label>Rate Override ($/hr)</label><input class="prate" type="number" placeholder="Leave blank = job rate"/></div>
+    </div>
+    <div class="mat-heads"><span>Material</span><span>Qty</span><span>Unit</span><span>$/Unit</span><span></span></div>
+    <div class="mlist">${mats.map(m=>matRow(m)).join('')}</div>
+    <button class="add-mat" onclick="addMat('${id}')">+ Add Material</button>`;
+  document.getElementById('parts-container').appendChild(div);
+}
+
+function matRow(name=''){
+  return`<div class="mat-row-input"><input value="${name}" placeholder="Material"/><input type="number" placeholder="0"/><input placeholder="sq ft / ea…"/><input type="number" placeholder="0.00" step="0.01"/><button class="rm-btn" onclick="this.closest('.mat-row-input').remove()">✕</button></div>`;
+}
+
+function addMat(id){document.querySelector('#'+id+' .mlist').insertAdjacentHTML('beforeend',matRow(''));}
+
+function clearForm(){
+  ['e-model','e-tail','e-rate','e-notes'].forEach(id=>document.getElementById(id).value='');
+  document.getElementById('e-date').value=today();
+  document.getElementById('parts-container').innerHTML='';
+  document.getElementById('save-msg').textContent='';
+  pc=0;
+}
+
+async function saveJob(){
+  const model=document.getElementById('e-model').value.trim();
+  const date=document.getElementById('e-date').value;
+  if(!model||!date){alert('Plane model and date are required.');return;}
+  const parts=[];
+  document.querySelectorAll('.part-entry').forEach(pe=>{
+    const name=pe.querySelector('.pname').value.trim();if(!name)return;
+    const mats=[];
+    pe.querySelectorAll('.mat-row-input').forEach(me=>{
+      const ins=me.querySelectorAll('input');
+      const mn=ins[0].value.trim();if(!mn)return;
+      mats.push({name:mn,qty:parseFloat(ins[1].value)||0,unit:ins[2].value.trim(),unitCost:parseFloat(ins[3].value)||0});
+    });
+    parts.push({name,hours:parseFloat(pe.querySelector('.phours').value)||0,rateOverride:parseFloat(pe.querySelector('.prate').value)||null,materials:mats});
+  });
+  if(!parts.length){alert('Add at least one part.');return;}
+  const mk=mkey(model);
+  if(!gData[mk])gData[mk]={model,jobs:[]};
+  gData[mk].jobs.push({date,tail:document.getElementById('e-tail').value.trim(),laborRate:parseFloat(document.getElementById('e-rate').value)||null,notes:document.getElementById('e-notes').value.trim(),parts});
+  const msg=document.getElementById('save-msg');
+  msg.style.color='var(--warn)';msg.textContent='Saving…';
+  try{await saveGH();msg.style.color='var(--success)';msg.textContent='Saved ✓';populatePlaneSelect();setTimeout(()=>msg.textContent='',3000);}
+  catch(e){msg.style.color='var(--danger)';msg.textContent='Failed: '+e.message;}
+}
+
+async function deletePlane(mk){
+  if(!confirm('Delete all data for this plane from GitHub?'))return;
+  delete gData[mk];await saveGH();populatePlaneSelect();showSearch();
+}
+
+// ── Settings ──────────────────────────────────────────
+function saveSettings(){
+  cfg.user=document.getElementById('s-user').value.trim();
+  cfg.repo=document.getElementById('s-repo').value.trim();
+  cfg.token=document.getElementById('s-token').value.trim();
+  if(!cfg.user||!cfg.repo||!cfg.token){alert('All fields required.');return;}
+  sc(cfg);loadGH();
+}
+
+// Global card click handler using event delegation — most reliable approach
+document.addEventListener('click', function(e) {
+  const card = e.target.closest('.pcard');
+  if (!card) return;
+  const mk = card.getAttribute('data-mk');
+  if (!mk) return;
+  const isNav = card.getAttribute('data-nav');
+  if (isNav) {
+    navToDetail(mk);
+  } else {
+    showDetail(mk);
+  }
+});
+
+// ── Utils ─────────────────────────────────────────────
+function mkey(m){return m.toLowerCase().replace(/\s+/g,'_').replace(/[^a-z0-9_]/g,'');}
+function sanitize(s){return s.replace(/[^a-zA-Z0-9]/g,'_');}
+function today(){return new Date().toISOString().split('T')[0];}
+
+// ── Init ──────────────────────────────────────────────
+(function init(){
+  const s=lc();
+  cfg={user:s.user||'JFree50',repo:s.repo||'Aircraft-Custom-Interiors-Bid-System',token:s.token||''};
+  document.getElementById('e-date').value=today();
+  document.getElementById('g-date').value=today();
+  document.getElementById('s-user').value=cfg.user;
+  document.getElementById('s-repo').value=cfg.repo;
+  document.getElementById('s-token').value=cfg.token;
+  if(cfg.token)loadGH();
+  else setStatus('err','No token — go to Settings');
+})();
+</script>
+</body>
+</html>
