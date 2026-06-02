@@ -1958,5 +1958,546 @@
         ]
       }
     ]
+  },
+  "challenger350": {
+    "model": "Challenger 350",
+    "jobs": [
+      {
+        "date": "2026-05-01",
+        "tail": "N257RY",
+        "laborRate": 90,
+        "notes": "",
+        "parts": [
+          {
+            "name": "FWd and aft entry bulkheads",
+            "hours": 75,
+            "materials": [
+              {
+                "name": "finsih WF depot",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 1000
+              },
+              {
+                "name": "sandpaper",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 200
+              },
+              {
+                "name": "burns",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 100
+              },
+              {
+                "name": "misc",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 200
+              }
+            ]
+          },
+          {
+            "name": "2 ledge tables",
+            "hours": 45,
+            "materials": [
+              {
+                "name": "finsih WF depot",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 400
+              },
+              {
+                "name": "sandpaper",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 100
+              },
+              {
+                "name": "burns",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 100
+              },
+              {
+                "name": "misc",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 100
+              }
+            ]
+          },
+          {
+            "name": "Inboard face of closet aft of MED",
+            "hours": 40,
+            "materials": [
+              {
+                "name": "finsih WF depot",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 500
+              },
+              {
+                "name": "sandpaper",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 100
+              },
+              {
+                "name": "burns",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 100
+              },
+              {
+                "name": "misc",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 100
+              }
+            ]
+          },
+          {
+            "name": "FWD face of aft bulkhead",
+            "hours": 60,
+            "materials": [
+              {
+                "name": "finsih WF depot",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 500
+              },
+              {
+                "name": "sandpaper",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 100
+              },
+              {
+                "name": "burns",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 100
+              },
+              {
+                "name": "misc",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 100
+              },
+              {
+                "name": "finsih WF depot",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 250
+              },
+              {
+                "name": "sandpaper",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 50
+              },
+              {
+                "name": "burns",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 100
+              },
+              {
+                "name": "misc",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 50
+              },
+              {
+                "name": "misc",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 250
+              }
+            ]
+          },
+          {
+            "name": "recover 6 seats in leather and toilet assembly cushions",
+            "hours": 210,
+            "materials": [
+              {
+                "name": "leather",
+                "qty": 825,
+                "unit": "ea",
+                "unitCost": 16
+              },
+              {
+                "name": "shipping",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 750
+              },
+              {
+                "name": "burn testing",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 3750
+              },
+              {
+                "name": "additional leather",
+                "qty": 55,
+                "unit": "ea",
+                "unitCost": 16
+              },
+              {
+                "name": "misc materials",
+                "qty": 6,
+                "unit": "ea",
+                "unitCost": 100
+              },
+              {
+                "name": "dax 25 foam .5 galaxy w scrim",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 700
+              },
+              {
+                "name": "belts",
+                "qty": 7,
+                "unit": "ea",
+                "unitCost": 350
+              },
+              {
+                "name": "foam",
+                "qty": 6,
+                "unit": "ea",
+                "unitCost": 1800
+              },
+              {
+                "name": "fabric",
+                "qty": 21,
+                "unit": "ea",
+                "unitCost": 150
+              },
+              {
+                "name": "shipping",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 500
+              },
+              {
+                "name": "burn testing",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 3750
+              },
+              {
+                "name": "additional fabric",
+                "qty": 7,
+                "unit": "ea",
+                "unitCost": 150
+              },
+              {
+                "name": "misc materials",
+                "qty": 4,
+                "unit": "ea",
+                "unitCost": 100
+              },
+              {
+                "name": "dax 25 foam .5 galaxy w scrim",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 700
+              },
+              {
+                "name": "belts",
+                "qty": 4,
+                "unit": "ea",
+                "unitCost": 350
+              },
+              {
+                "name": "misc materials",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 200
+              },
+              {
+                "name": "foam",
+                "qty": 3,
+                "unit": "ea",
+                "unitCost": 1800
+              }
+            ]
+          },
+          {
+            "name": "strip and recover lower side walls",
+            "hours": 70,
+            "materials": [
+              {
+                "name": "foam AL 76 .125 50'",
+                "qty": 0.5,
+                "unit": "ea",
+                "unitCost": 1000
+              },
+              {
+                "name": "shipping",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 200
+              },
+              {
+                "name": "burns",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 150
+              },
+              {
+                "name": "ultraleather",
+                "qty": 7,
+                "unit": "ea",
+                "unitCost": 110
+              },
+              {
+                "name": "adhesive remover",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 150
+              }
+            ]
+          },
+          {
+            "name": "strip and recover wndow panels",
+            "hours": 130,
+            "materials": [
+              {
+                "name": "foam AL 76 .125 50'",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 1000
+              },
+              {
+                "name": "shipping",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 200
+              },
+              {
+                "name": "burns",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 150
+              },
+              {
+                "name": "ultraleather",
+                "qty": 14,
+                "unit": "ea",
+                "unitCost": 110
+              },
+              {
+                "name": "adhesive remover",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 150
+              }
+            ]
+          },
+          {
+            "name": "strip and recover ceiling overhead panels",
+            "hours": 110,
+            "materials": [
+              {
+                "name": "foam AL 76 .125 50'",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 1000
+              },
+              {
+                "name": "shipping",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 200
+              },
+              {
+                "name": "burns",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 150
+              },
+              {
+                "name": "ultraleather",
+                "qty": 14,
+                "unit": "ea",
+                "unitCost": 110
+              },
+              {
+                "name": "adhesive remover",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 150
+              }
+            ]
+          },
+          {
+            "name": "strip and recover psu panels",
+            "hours": 60,
+            "materials": [
+              {
+                "name": "shipping",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 75
+              },
+              {
+                "name": "burns",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 150
+              },
+              {
+                "name": "ultraleather",
+                "qty": 7,
+                "unit": "ea",
+                "unitCost": 110
+              },
+              {
+                "name": "adhesive remover",
+                "qty": 0.5,
+                "unit": "ea",
+                "unitCost": 150
+              }
+            ]
+          },
+          {
+            "name": "remove nd replace carpet",
+            "hours": 150,
+            "materials": [
+              {
+                "name": "red rock",
+                "qty": 28,
+                "unit": "ea",
+                "unitCost": 300
+              },
+              {
+                "name": "shipping",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 700
+              },
+              {
+                "name": "burns",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 150
+              },
+              {
+                "name": "velcro",
+                "qty": 14,
+                "unit": "ea",
+                "unitCost": 150
+              },
+              {
+                "name": "misc",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 100
+              },
+              {
+                "name": "pad shipping",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 400
+              }
+            ]
+          },
+          {
+            "name": "polish all wood",
+            "hours": 798,
+            "materials": [
+              {
+                "name": "materials",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 3500
+              }
+            ]
+          },
+          {
+            "name": "crew seats",
+            "hours": 100,
+            "materials": [
+              {
+                "name": "leather",
+                "qty": 110,
+                "unit": "ea",
+                "unitCost": 16
+              },
+              {
+                "name": "shipping",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 200
+              },
+              {
+                "name": "burn testing",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 300
+              },
+              {
+                "name": "misc materials",
+                "qty": 2,
+                "unit": "ea",
+                "unitCost": 100
+              },
+              {
+                "name": "belts",
+                "qty": 2,
+                "unit": "ea",
+                "unitCost": 350
+              },
+              {
+                "name": "foam",
+                "qty": 2,
+                "unit": "ea",
+                "unitCost": 1800
+              }
+            ]
+          },
+          {
+            "name": "strip and recover baggage and floor",
+            "hours": 120,
+            "materials": [
+              {
+                "name": "grospoint",
+                "qty": 25,
+                "unit": "ea",
+                "unitCost": 110
+              },
+              {
+                "name": "shipping",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 250
+              },
+              {
+                "name": "adhesive",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 200
+              },
+              {
+                "name": "adhesive remover",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 150
+              },
+              {
+                "name": "misc materials",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 200
+              }
+            ]
+          }
+        ]
+      }
+    ]
   }
 }
