@@ -6,7 +6,7 @@
         "date": "2022-08-01",
         "tail": "N604WL",
         "laborRate": 72,
-        "notes": "August 2022 bid — labor rate ($72/hr) and all material costs are outdated. Use as reference only for quantities and material types.",
+        "notes": "August 2022 bid â labor rate ($72/hr) and all material costs are outdated. Use as reference only for quantities and material types.",
         "parts": [
           {
             "name": "Soft Goods Removal & Reinstall",
@@ -561,7 +561,7 @@
         "date": "2026-05-01",
         "tail": "N550MV",
         "laborRate": 90,
-        "notes": "May 2026 bid — current pricing. Material costs and labor rate are up to date.",
+        "notes": "May 2026 bid â current pricing. Material costs and labor rate are up to date.",
         "parts": [
           {
             "name": "Carpet (Cockpit / Cabin / Crew Rest / Seat Bases)",
@@ -589,7 +589,7 @@
             ]
           },
           {
-            "name": "Vinyl — Entry & Fwd Lav",
+            "name": "Vinyl â Entry & Fwd Lav",
             "hours": 36,
             "rateOverride": null,
             "materials": [
@@ -614,7 +614,7 @@
             ]
           },
           {
-            "name": "Vinyl — Entry Stairs",
+            "name": "Vinyl â Entry Stairs",
             "hours": 45,
             "rateOverride": null,
             "materials": [
@@ -645,7 +645,7 @@
             ]
           },
           {
-            "name": "Vinyl — Aft Lav",
+            "name": "Vinyl â Aft Lav",
             "hours": 24,
             "rateOverride": null,
             "materials": [
@@ -874,6 +874,18 @@
           }
         ]
       }
+    ],
+    "knownParts": [
+      "cockpit_carpet",
+      "cabin_carpet",
+      "crew_rest_carpet",
+      "seat_base_carpet",
+      "fwd_lav_floor",
+      "entry_stairs",
+      "aft_lav_floor",
+      "glareshield",
+      "crew_seats",
+      "yoke_boots"
     ]
   },
   "challenger300": {
@@ -2498,6 +2510,401 @@
           }
         ]
       }
+    ]
+  },
+  "cessnacitation680": {
+    "model": "Cessna Citation 680",
+    "jobs": [
+      {
+        "date": "2023-06-02",
+        "tail": "",
+        "laborRate": 76,
+        "notes": "Tail Number wasn't provided",
+        "parts": [
+          {
+            "name": "strip foam and recover p/cp seats",
+            "hours": 155,
+            "materials": [
+              {
+                "name": "sheepskin plates",
+                "qty": 4,
+                "unit": "ea",
+                "unitCost": 90
+              },
+              {
+                "name": "leather",
+                "qty": 110,
+                "unit": "ea",
+                "unitCost": 10
+              },
+              {
+                "name": "belts",
+                "qty": 2,
+                "unit": "ea",
+                "unitCost": 350
+              },
+              {
+                "name": "foam",
+                "qty": 2,
+                "unit": "ea",
+                "unitCost": 1000
+              },
+              {
+                "name": "adhesive",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 175
+              },
+              {
+                "name": "shipping",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 250
+              }
+            ]
+          },
+          {
+            "name": "strip foam and recover potty lid and crash pad",
+            "hours": 50,
+            "materials": [
+              {
+                "name": "leather",
+                "qty": 55,
+                "unit": "ea",
+                "unitCost": 10
+              },
+              {
+                "name": "belts",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 350
+              },
+              {
+                "name": "burns",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 100
+              },
+              {
+                "name": "foam",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 300
+              }
+            ]
+          },
+          {
+            "name": "replace carpet from cockpit to lav",
+            "hours": 0,
+            "materials": [
+              {
+                "name": "carpet",
+                "qty": 29,
+                "unit": "ea",
+                "unitCost": 250
+              },
+              {
+                "name": "velcro",
+                "qty": 4,
+                "unit": "ea",
+                "unitCost": 65
+              },
+              {
+                "name": "misc materials",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 150
+              },
+              {
+                "name": "burns",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 200
+              },
+              {
+                "name": "shipping",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 450
+              }
+            ]
+          },
+          {
+            "name": "strip and recover cabin lower side walls",
+            "hours": 120,
+            "materials": [
+              {
+                "name": "utraleather",
+                "qty": 9,
+                "unit": "ea",
+                "unitCost": 90
+              },
+              {
+                "name": "foam",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 400
+              },
+              {
+                "name": "adhesive",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 175
+              },
+              {
+                "name": "burns",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 150
+              },
+              {
+                "name": "shipping",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 200
+              }
+            ]
+          },
+          {
+            "name": "strip foam and recover 1 place divan",
+            "hours": 120,
+            "materials": [
+              {
+                "name": "leather",
+                "qty": 110,
+                "unit": "ea",
+                "unitCost": 10
+              },
+              {
+                "name": "foam",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 2000
+              },
+              {
+                "name": "belts",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 350
+              },
+              {
+                "name": "velcro",
+                "qty": 2,
+                "unit": "ea",
+                "unitCost": 65
+              },
+              {
+                "name": "adhesive",
+                "qty": 0.5,
+                "unit": "ea",
+                "unitCost": 175
+              },
+              {
+                "name": "misc",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 200
+              },
+              {
+                "name": "shipping",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 200
+              },
+              {
+                "name": "burn leather",
+                "qty": 55,
+                "unit": "ea",
+                "unitCost": 10
+              },
+              {
+                "name": "fire blockmaterial",
+                "qty": 5,
+                "unit": "ea",
+                "unitCost": 70
+              }
+            ]
+          },
+          {
+            "name": "strip foam and recover 8 cabin seats",
+            "hours": 1080,
+            "materials": [
+              {
+                "name": "leather",
+                "qty": 1100,
+                "unit": "ea",
+                "unitCost": 10
+              },
+              {
+                "name": "foam",
+                "qty": 8,
+                "unit": "ea",
+                "unitCost": 2000
+              },
+              {
+                "name": "adhesive",
+                "qty": 2,
+                "unit": "ea",
+                "unitCost": 175
+              },
+              {
+                "name": "belts",
+                "qty": 8,
+                "unit": "ea",
+                "unitCost": 350
+              },
+              {
+                "name": "velcro",
+                "qty": 4,
+                "unit": "ea",
+                "unitCost": 69
+              },
+              {
+                "name": "shipping",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 400
+              },
+              {
+                "name": "Oil burner test",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 4444
+              },
+              {
+                "name": "burn leather",
+                "qty": 55,
+                "unit": "ea",
+                "unitCost": 10
+              }
+            ]
+          },
+          {
+            "name": "strip and recover headliner, PSU and window panels",
+            "hours": 240,
+            "materials": [
+              {
+                "name": "AL 76.125",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 800
+              },
+              {
+                "name": "adhesive",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 175
+              },
+              {
+                "name": "adhesive remover",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 150
+              },
+              {
+                "name": "misc materials",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 100
+              },
+              {
+                "name": "shipping",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 150
+              },
+              {
+                "name": "burns",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 125
+              }
+            ]
+          },
+          {
+            "name": "ACI painted and replaced the tread on  the entry door closeout. The aft stair tread was also replaced.",
+            "hours": 70,
+            "materials": [
+              {
+                "name": "vinyl",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 600
+              },
+              {
+                "name": "adhesive",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 150
+              },
+              {
+                "name": "misc materials",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 200
+              },
+              {
+                "name": "paint",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 250
+              }
+            ]
+          },
+          {
+            "name": "ACI lightly sanded and buffed the cabinets to remove the surface swirls.",
+            "hours": 300,
+            "materials": [
+              {
+                "name": "misc materials",
+                "qty": 2,
+                "unit": "ea",
+                "unitCost": 1000
+              },
+              {
+                "name": "placards",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 300
+              }
+            ]
+          },
+          {
+            "name": "Overtime",
+            "hours": 120,
+            "materials": []
+          },
+          {
+            "name": "ACI removed and installed interior cocoon panels and aft baggage wall panels in supprt of inspection . Panels did not need to be removed for the interior refurbishment.",
+            "hours": 100,
+            "materials": [
+              {
+                "name": "misc materials",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 300
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "knownParts": [
+      "pilot_cp_seats",
+      "cockpit_carpet",
+      "cabin_carpet",
+      "crew_rest_carpet",
+      "seat_base_carpet",
+      "lower_side_panels",
+      "divan",
+      "cabin_seats",
+      "entry_headliner",
+      "cabin_headliner",
+      "aft_headliner",
+      "psu_panels",
+      "window_panels",
+      "entry_stairs",
+      "baggage_floor"
     ]
   }
 }
