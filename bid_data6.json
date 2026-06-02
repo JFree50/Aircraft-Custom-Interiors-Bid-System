@@ -1,0 +1,4223 @@
+{
+  "challenger604": {
+    "model": "Challenger 604",
+    "knownParts": [
+      "aft_headliner",
+      "baggage_floor",
+      "bulkhead_panels",
+      "cabin_headliner",
+      "cabin_seats",
+      "closet_interior",
+      "cockpit_floor",
+      "divan",
+      "entry_headliner",
+      "jump_seats",
+      "lower_side_panels",
+      "med_cabin_curtain",
+      "pilot_cp_seats",
+      "rr",
+      "toilet_assembly",
+      "valance_panels",
+      "window_panels",
+      "window_shades"
+    ],
+    "jobs": [
+      {
+        "date": "2022-08-01",
+        "tail": "N604WL",
+        "laborRate": 72,
+        "notes": "August 2022 bid \u2014 labor rate ($72/hr) and all material costs are outdated. Use as reference only for quantities and material types.",
+        "parts": [
+          {
+            "name": "R&R \u2014 Soft Goods Removal & Reinstall",
+            "hours": 256,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "Gas",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 150
+              },
+              {
+                "name": "Misc materials",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 100
+              }
+            ]
+          },
+          {
+            "name": "Pilot / Co-Pilot Seats \u2014 Refoam & Recover",
+            "hours": 92,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "Leather",
+                "qty": 60,
+                "unit": "sq ft",
+                "unitCost": 10
+              },
+              {
+                "name": "Foam",
+                "qty": 1.5,
+                "unit": "ea",
+                "unitCost": 500
+              },
+              {
+                "name": "Belts",
+                "qty": 2,
+                "unit": "ea",
+                "unitCost": 300
+              },
+              {
+                "name": "Paint",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 150
+              },
+              {
+                "name": "Burns",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 100
+              },
+              {
+                "name": "Sheepskin plates",
+                "qty": 4,
+                "unit": "ea",
+                "unitCost": 75
+              },
+              {
+                "name": "Misc materials",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 100
+              },
+              {
+                "name": "Shipping",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 150
+              }
+            ]
+          },
+          {
+            "name": "Jump Seats \u2014 Refoam & Recover",
+            "hours": 92,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "Leather",
+                "qty": 60,
+                "unit": "sq ft",
+                "unitCost": 10
+              },
+              {
+                "name": "Foam",
+                "qty": 1.5,
+                "unit": "ea",
+                "unitCost": 500
+              },
+              {
+                "name": "Belts",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 300
+              },
+              {
+                "name": "Misc materials",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 100
+              }
+            ]
+          },
+          {
+            "name": "Cabin Seats \u2014 Refoam & Recover",
+            "hours": 130.8,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "Leather",
+                "qty": 150.0,
+                "unit": "sq ft",
+                "unitCost": 10
+              },
+              {
+                "name": "Foam",
+                "qty": 1.0,
+                "unit": "ea",
+                "unitCost": 1750
+              },
+              {
+                "name": "Belts",
+                "qty": 1.0,
+                "unit": "ea",
+                "unitCost": 300
+              },
+              {
+                "name": "Adhesive",
+                "qty": 0.375,
+                "unit": "ea",
+                "unitCost": 150
+              },
+              {
+                "name": "Misc",
+                "qty": 1.0,
+                "unit": "ea",
+                "unitCost": 125
+              },
+              {
+                "name": "Fire blocking",
+                "qty": 0.125,
+                "unit": "ea",
+                "unitCost": 3000
+              },
+              {
+                "name": "Additional leather & foam for fire blocking",
+                "qty": 0.125,
+                "unit": "ea",
+                "unitCost": 1400
+              },
+              {
+                "name": "Velcro",
+                "qty": 0.75,
+                "unit": "ea",
+                "unitCost": 80
+              },
+              {
+                "name": "Shipping",
+                "qty": 0.125,
+                "unit": "ea",
+                "unitCost": 750
+              }
+            ]
+          },
+          {
+            "name": "Divan \u2014 Refoam & Recover",
+            "hours": 260,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "Foam",
+                "qty": 4,
+                "unit": "ea",
+                "unitCost": 1100
+              },
+              {
+                "name": "Fabric",
+                "qty": 18,
+                "unit": "yd",
+                "unitCost": 110
+              },
+              {
+                "name": "Belts",
+                "qty": 3,
+                "unit": "ea",
+                "unitCost": 300
+              },
+              {
+                "name": "Adhesive",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 150
+              },
+              {
+                "name": "Misc",
+                "qty": 4,
+                "unit": "ea",
+                "unitCost": 100
+              },
+              {
+                "name": "Fire blocking",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 1200
+              },
+              {
+                "name": "Additional fabric & foam for fire blocking",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 950
+              },
+              {
+                "name": "Velcro",
+                "qty": 2,
+                "unit": "ea",
+                "unitCost": 50
+              },
+              {
+                "name": "Fabric treatment",
+                "qty": 23,
+                "unit": "ea",
+                "unitCost": 25
+              },
+              {
+                "name": "Shipping",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 750
+              }
+            ]
+          },
+          {
+            "name": "Toilet Assembly \u2014 Recover Only",
+            "hours": 40,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "Foam",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 300
+              },
+              {
+                "name": "Leather",
+                "qty": 60,
+                "unit": "sq ft",
+                "unitCost": 10
+              },
+              {
+                "name": "Misc materials",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 50
+              }
+            ]
+          },
+          {
+            "name": "Entry Headliner \u2014 Strip, Foam & Recover",
+            "hours": 48,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "Aluminum sheet (al 76 .125 50ft)",
+                "qty": 0.25,
+                "unit": "ea",
+                "unitCost": 700
+              },
+              {
+                "name": "Adhesive",
+                "qty": 0.5,
+                "unit": "ea",
+                "unitCost": 150
+              },
+              {
+                "name": "Ultra leather",
+                "qty": 3,
+                "unit": "ea",
+                "unitCost": 95
+              },
+              {
+                "name": "Misc",
+                "qty": 0.25,
+                "unit": "ea",
+                "unitCost": 250
+              },
+              {
+                "name": "Shipping",
+                "qty": 0.25,
+                "unit": "ea",
+                "unitCost": 100
+              }
+            ]
+          },
+          {
+            "name": "Cabin Headliner \u2014 Strip, Foam & Recover",
+            "hours": 96,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "Aluminum sheet (al 76 .125 50ft)",
+                "qty": 0.5,
+                "unit": "ea",
+                "unitCost": 700
+              },
+              {
+                "name": "Adhesive",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 150
+              },
+              {
+                "name": "Ultra leather",
+                "qty": 6,
+                "unit": "ea",
+                "unitCost": 95
+              },
+              {
+                "name": "Burns",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 80
+              },
+              {
+                "name": "Misc",
+                "qty": 0.5,
+                "unit": "ea",
+                "unitCost": 250
+              }
+            ]
+          },
+          {
+            "name": "AFT Headliner \u2014 Strip, Foam & Recover",
+            "hours": 48,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "Aluminum sheet (al 76 .125 50ft)",
+                "qty": 0.25,
+                "unit": "ea",
+                "unitCost": 700
+              },
+              {
+                "name": "Adhesive",
+                "qty": 0.5,
+                "unit": "ea",
+                "unitCost": 150
+              },
+              {
+                "name": "Ultra leather",
+                "qty": 3,
+                "unit": "ea",
+                "unitCost": 95
+              },
+              {
+                "name": "Misc",
+                "qty": 0.25,
+                "unit": "ea",
+                "unitCost": 250
+              }
+            ]
+          },
+          {
+            "name": "Valance Panels \u2014 Strip & Recover",
+            "hours": 120,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "Ultra leather",
+                "qty": 8,
+                "unit": "ea",
+                "unitCost": 95
+              },
+              {
+                "name": "Misc materials",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 75
+              }
+            ]
+          },
+          {
+            "name": "Bulkhead Panels \u2014 Strip & Recover",
+            "hours": 104,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "Ultra leather",
+                "qty": 6,
+                "unit": "ea",
+                "unitCost": 95
+              },
+              {
+                "name": "Contour ultra leather",
+                "qty": 3,
+                "unit": "ea",
+                "unitCost": 95
+              },
+              {
+                "name": "Adhesive",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 150
+              },
+              {
+                "name": "Misc materials",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 50
+              }
+            ]
+          },
+          {
+            "name": "Window Panels \u2014 Strip, Foam & Recover (incl. Shades)",
+            "hours": 160,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "Foam",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 800
+              },
+              {
+                "name": "Ultraleather",
+                "qty": 18,
+                "unit": "ea",
+                "unitCost": 95
+              },
+              {
+                "name": "Adhesive",
+                "qty": 2,
+                "unit": "ea",
+                "unitCost": 150
+              },
+              {
+                "name": "Burns",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 80
+              }
+            ]
+          },
+          {
+            "name": "Cockpit Floor \u2014 Replace",
+            "hours": 110,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "Tredford",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 800
+              },
+              {
+                "name": "Burns",
+                "qty": 2,
+                "unit": "ea",
+                "unitCost": 80
+              },
+              {
+                "name": "Serging yarn",
+                "qty": 2,
+                "unit": "ea",
+                "unitCost": 50
+              },
+              {
+                "name": "Velcro",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 50
+              },
+              {
+                "name": "Shipping",
+                "qty": 0.5,
+                "unit": "ea",
+                "unitCost": 350
+              }
+            ]
+          },
+          {
+            "name": "Cabin Carpet \u2014 Replace",
+            "hours": 110,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "Carpet (18x12ft)",
+                "qty": 30,
+                "unit": "ea",
+                "unitCost": 240
+              },
+              {
+                "name": "Burns",
+                "qty": 2,
+                "unit": "ea",
+                "unitCost": 80
+              },
+              {
+                "name": "Serging yarn",
+                "qty": 2,
+                "unit": "ea",
+                "unitCost": 50
+              },
+              {
+                "name": "Velcro",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 50
+              },
+              {
+                "name": "Shipping",
+                "qty": 0.5,
+                "unit": "ea",
+                "unitCost": 350
+              }
+            ]
+          },
+          {
+            "name": "Lower Side Panels \u2014 Strip, Foam & Recover",
+            "hours": 110,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "Ultraleather",
+                "qty": 7,
+                "unit": "ea",
+                "unitCost": 95
+              },
+              {
+                "name": "Adhesive",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 150
+              },
+              {
+                "name": "Misc materials",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 100
+              },
+              {
+                "name": "Burns",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 90
+              },
+              {
+                "name": "Foam",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 500
+              },
+              {
+                "name": "Shipping",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 75
+              }
+            ]
+          },
+          {
+            "name": "Baggage Floor \u2014 Strip & Recover",
+            "hours": 80,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "Grospoint",
+                "qty": 10,
+                "unit": "ea",
+                "unitCost": 90
+              },
+              {
+                "name": "Misc materials",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 100
+              },
+              {
+                "name": "Burns",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 75
+              },
+              {
+                "name": "Adhesive",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 150
+              }
+            ]
+          },
+          {
+            "name": "Closets \u2014 Strip & Recover",
+            "hours": 80,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "Grospoint",
+                "qty": 6,
+                "unit": "ea",
+                "unitCost": 90
+              },
+              {
+                "name": "Misc materials",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 50
+              },
+              {
+                "name": "Burns",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 75
+              },
+              {
+                "name": "Adhesive",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 150
+              }
+            ]
+          },
+          {
+            "name": "MED / Cabin Curtain \u2014 Fabricate New",
+            "hours": 60,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "Fabric",
+                "qty": 6,
+                "unit": "ea",
+                "unitCost": 130
+              },
+              {
+                "name": "Naugahyde",
+                "qty": 4,
+                "unit": "ea",
+                "unitCost": 30
+              },
+              {
+                "name": "Burns",
+                "qty": 0.5,
+                "unit": "ea",
+                "unitCost": 75
+              },
+              {
+                "name": "Misc",
+                "qty": 0.5,
+                "unit": "ea",
+                "unitCost": 75
+              },
+              {
+                "name": "Fabric treatment",
+                "qty": 6,
+                "unit": "ea",
+                "unitCost": 20
+              },
+              {
+                "name": "Shipping",
+                "qty": 0.5,
+                "unit": "ea",
+                "unitCost": 100
+              }
+            ]
+          },
+          {
+            "name": "Cockpit Curtain \u2014 Fabricate New",
+            "hours": 38,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "Fabric",
+                "qty": 4,
+                "unit": "ea",
+                "unitCost": 130
+              },
+              {
+                "name": "Naugahyde",
+                "qty": 2,
+                "unit": "ea",
+                "unitCost": 30
+              },
+              {
+                "name": "Misc",
+                "qty": 0.5,
+                "unit": "ea",
+                "unitCost": 75
+              },
+              {
+                "name": "Fabric treatment",
+                "qty": 4,
+                "unit": "ea",
+                "unitCost": 20
+              },
+              {
+                "name": "Shipping",
+                "qty": 0.5,
+                "unit": "ea",
+                "unitCost": 100
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "gulfstreamg550": {
+    "model": "Gulfstream G550",
+    "knownParts": [
+      "aft_lav_floor",
+      "cabin_carpet",
+      "cockpit_carpet",
+      "crew_rest_carpet",
+      "crew_seats",
+      "entry_floor",
+      "entry_stairs",
+      "fwd_lav_floor",
+      "glareshield",
+      "seat_base_carpet",
+      "yoke_boots"
+    ],
+    "jobs": [
+      {
+        "date": "2026-05-01",
+        "tail": "N550MV",
+        "laborRate": 90,
+        "notes": "May 2026 bid \u2014 current pricing. Material costs and labor rate are up to date.",
+        "parts": [
+          {
+            "name": "Cockpit Carpet \u2014 Replace",
+            "hours": 70,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "Carpet (45 sq yd)",
+                "qty": 11,
+                "unit": "sq yd",
+                "unitCost": 350
+              },
+              {
+                "name": "Burns",
+                "qty": 0.25,
+                "unit": "ea",
+                "unitCost": 150
+              },
+              {
+                "name": "Shipping",
+                "qty": 0.25,
+                "unit": "ea",
+                "unitCost": 1000
+              }
+            ]
+          },
+          {
+            "name": "Cabin Carpet \u2014 Replace",
+            "hours": 140,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "Carpet (45 sq yd)",
+                "qty": 22,
+                "unit": "sq yd",
+                "unitCost": 350
+              },
+              {
+                "name": "Burns",
+                "qty": 0.5,
+                "unit": "ea",
+                "unitCost": 150
+              },
+              {
+                "name": "Shipping",
+                "qty": 0.5,
+                "unit": "ea",
+                "unitCost": 1000
+              }
+            ]
+          },
+          {
+            "name": "Crew Rest Carpet \u2014 Replace",
+            "hours": 35,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "Carpet (45 sq yd)",
+                "qty": 7,
+                "unit": "sq yd",
+                "unitCost": 350
+              },
+              {
+                "name": "Burns",
+                "qty": 0.13,
+                "unit": "ea",
+                "unitCost": 150
+              },
+              {
+                "name": "Shipping",
+                "qty": 0.13,
+                "unit": "ea",
+                "unitCost": 1000
+              }
+            ]
+          },
+          {
+            "name": "Seat Base Carpet \u2014 Replace",
+            "hours": 35,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "Carpet (45 sq yd)",
+                "qty": 5,
+                "unit": "sq yd",
+                "unitCost": 350
+              },
+              {
+                "name": "Burns",
+                "qty": 0.12,
+                "unit": "ea",
+                "unitCost": 150
+              },
+              {
+                "name": "Shipping",
+                "qty": 0.12,
+                "unit": "ea",
+                "unitCost": 1000
+              }
+            ]
+          },
+          {
+            "name": "Entry Floor \u2014 Replace with Vinyl",
+            "hours": 36,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "2 Tec 2 vinyl",
+                "qty": 7,
+                "unit": "ea",
+                "unitCost": 240
+              },
+              {
+                "name": "Shipping",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 125
+              },
+              {
+                "name": "Burns",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 150
+              }
+            ]
+          },
+          {
+            "name": "Entry Stairs \u2014 Replace with Vinyl",
+            "hours": 45,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "2 Tec 2 vinyl",
+                "qty": 6,
+                "unit": "ea",
+                "unitCost": 190
+              },
+              {
+                "name": "Shipping",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 125
+              },
+              {
+                "name": "Burns",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 150
+              },
+              {
+                "name": "Red tape",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 500
+              }
+            ]
+          },
+          {
+            "name": "Aft Lav Floor \u2014 Replace with Vinyl",
+            "hours": 24,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "2 Tec 2 vinyl",
+                "qty": 3,
+                "unit": "ea",
+                "unitCost": 190
+              },
+              {
+                "name": "Shipping",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 125
+              },
+              {
+                "name": "Burns",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 150
+              }
+            ]
+          },
+          {
+            "name": "Glareshield \u2014 Strip & Recover",
+            "hours": 34,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "Tapis matte black ultraleather",
+                "qty": 4,
+                "unit": "ea",
+                "unitCost": 130
+              },
+              {
+                "name": "Misc materials",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 100
+              },
+              {
+                "name": "Misc removal",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 1000
+              },
+              {
+                "name": "Shipping",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 50
+              }
+            ]
+          },
+          {
+            "name": "Crew Seats P/CP \u2014 Refoam & Recover",
+            "hours": 140,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "Sheepskin",
+                "qty": 4,
+                "unit": "ea",
+                "unitCost": 100
+              },
+              {
+                "name": "Leather",
+                "qty": 165,
+                "unit": "sq ft",
+                "unitCost": 12
+              },
+              {
+                "name": "Foam",
+                "qty": 2,
+                "unit": "ea",
+                "unitCost": 900
+              },
+              {
+                "name": "Misc materials",
+                "qty": 2,
+                "unit": "ea",
+                "unitCost": 100
+              },
+              {
+                "name": "Burns",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 250
+              },
+              {
+                "name": "Belts",
+                "qty": 2,
+                "unit": "ea",
+                "unitCost": 500
+              },
+              {
+                "name": "Shipping",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 200
+              },
+              {
+                "name": "Gas",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 100
+              }
+            ]
+          },
+          {
+            "name": "Fwd Lav Floor \u2014 Floor System",
+            "hours": 100,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "Mannington",
+                "qty": 0.5,
+                "unit": "ea",
+                "unitCost": 1250
+              },
+              {
+                "name": "Honeycomb panels",
+                "qty": 2,
+                "unit": "ea",
+                "unitCost": 1500
+              },
+              {
+                "name": "Thresholds",
+                "qty": 0.33,
+                "unit": "ea",
+                "unitCost": 5000
+              },
+              {
+                "name": "Burns",
+                "qty": 0.33,
+                "unit": "ea",
+                "unitCost": 200
+              },
+              {
+                "name": "Shipping",
+                "qty": 0.33,
+                "unit": "ea",
+                "unitCost": 200
+              },
+              {
+                "name": "Red tape",
+                "qty": 0.33,
+                "unit": "ea",
+                "unitCost": 500
+              },
+              {
+                "name": "Aluminum tape",
+                "qty": 0.33,
+                "unit": "ea",
+                "unitCost": 500
+              }
+            ]
+          },
+          {
+            "name": "Entry / Fwd Lav Floor System",
+            "hours": 100,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "Mannington",
+                "qty": 0.5,
+                "unit": "ea",
+                "unitCost": 1250
+              },
+              {
+                "name": "Honeycomb panels",
+                "qty": 3,
+                "unit": "ea",
+                "unitCost": 1500
+              },
+              {
+                "name": "Thresholds",
+                "qty": 0.67,
+                "unit": "ea",
+                "unitCost": 5000
+              },
+              {
+                "name": "Burns",
+                "qty": 0.67,
+                "unit": "ea",
+                "unitCost": 200
+              },
+              {
+                "name": "Shipping",
+                "qty": 0.67,
+                "unit": "ea",
+                "unitCost": 200
+              },
+              {
+                "name": "Red tape",
+                "qty": 0.67,
+                "unit": "ea",
+                "unitCost": 500
+              },
+              {
+                "name": "Aluminum tape",
+                "qty": 0.67,
+                "unit": "ea",
+                "unitCost": 500
+              }
+            ]
+          },
+          {
+            "name": "Aft Lav Floor \u2014 Floor System",
+            "hours": 50,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "Mannington",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 500
+              },
+              {
+                "name": "Honeycomb panels",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 1500
+              },
+              {
+                "name": "Thresholds",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 250
+              },
+              {
+                "name": "Shipping",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 100
+              },
+              {
+                "name": "Red tape",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 150
+              },
+              {
+                "name": "Aluminum tape",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 200
+              }
+            ]
+          },
+          {
+            "name": "Yoke Boots \u2014 Replace",
+            "hours": 24,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "GH leather",
+                "qty": 55,
+                "unit": "sq ft",
+                "unitCost": 17
+              },
+              {
+                "name": "Shipping",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 100
+              },
+              {
+                "name": "Misc materials",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 100
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "challenger300": {
+    "model": "Challenger 300",
+    "knownParts": [
+      "aft_headliner",
+      "baggage_floor",
+      "cabin_carpet",
+      "cabin_headliner",
+      "cabin_seats",
+      "cockpit_carpet",
+      "cockpit_curtain",
+      "cockpit_floor",
+      "divan",
+      "entry_headliner",
+      "entry_stairs",
+      "galley_countertops",
+      "galley_throws",
+      "galley_woodwork",
+      "jump_seats",
+      "lower_side_panels",
+      "med_cabin_curtain",
+      "pilot_cp_seats",
+      "psu_panels",
+      "rr",
+      "toilet_assembly",
+      "window_panels",
+      "window_shades"
+    ],
+    "jobs": [
+      {
+        "date": "2023-04-01",
+        "tail": "",
+        "laborRate": 70,
+        "notes": "Tail Number not listed",
+        "parts": [
+          {
+            "name": "Pilot / Co-Pilot Seats \u2014 Refoam & Recover",
+            "hours": 158,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "DAX",
+                "qty": 2,
+                "unit": "ea",
+                "unitCost": 1500
+              },
+              {
+                "name": "leather",
+                "qty": 60,
+                "unit": "ea",
+                "unitCost": 8
+              },
+              {
+                "name": "shepskin",
+                "qty": 45,
+                "unit": "ea",
+                "unitCost": 13
+              },
+              {
+                "name": "belts",
+                "qty": 2,
+                "unit": "ea",
+                "unitCost": 350
+              },
+              {
+                "name": "test 8110 and report",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 695
+              },
+              {
+                "name": "DER",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 850
+              },
+              {
+                "name": "misc materials",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 250
+              },
+              {
+                "name": "paint and misc",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 350
+              }
+            ]
+          },
+          {
+            "name": "Cockpit Floor \u2014 Replace",
+            "hours": 40,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "Aip smoke tree 109",
+                "qty": 3,
+                "unit": "ea",
+                "unitCost": 190
+              },
+              {
+                "name": "SKIV3",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 270
+              },
+              {
+                "name": "burns",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 100
+              },
+              {
+                "name": "shipping",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 75
+              },
+              {
+                "name": "misc",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 50
+              }
+            ]
+          },
+          {
+            "name": "Entry Stairs \u2014 Strip & Recover",
+            "hours": 35,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "red tape",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 400
+              },
+              {
+                "name": "vinyl",
+                "qty": 4,
+                "unit": "ea",
+                "unitCost": 200
+              },
+              {
+                "name": "misc materials",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 150
+              },
+              {
+                "name": "burns",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 150
+              },
+              {
+                "name": "shipping",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 75
+              }
+            ]
+          },
+          {
+            "name": "Cabin Carpet \u2014 Replace",
+            "hours": 160,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "carpet",
+                "qty": 32,
+                "unit": "ea",
+                "unitCost": 275
+              },
+              {
+                "name": "burn tests",
+                "qty": 2,
+                "unit": "ea",
+                "unitCost": 150
+              },
+              {
+                "name": "shipping",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 600
+              },
+              {
+                "name": "surging yarn",
+                "qty": 3,
+                "unit": "ea",
+                "unitCost": 50
+              },
+              {
+                "name": "velcro",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 150
+              },
+              {
+                "name": "misc materials",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 150
+              }
+            ]
+          },
+          {
+            "name": "Cabin Seats \u2014 Recover Only",
+            "hours": 75.0,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "leather",
+                "qty": 110.0,
+                "unit": "ea",
+                "unitCost": 16
+              },
+              {
+                "name": "shipping",
+                "qty": 0.167,
+                "unit": "ea",
+                "unitCost": 750
+              },
+              {
+                "name": "burn testing",
+                "qty": 0.167,
+                "unit": "ea",
+                "unitCost": 3750
+              },
+              {
+                "name": "additional leather",
+                "qty": 9.167,
+                "unit": "ea",
+                "unitCost": 16
+              },
+              {
+                "name": "misc materials",
+                "qty": 1.0,
+                "unit": "ea",
+                "unitCost": 100
+              },
+              {
+                "name": "dax 25 foam .5 galaxy w scrim",
+                "qty": 0.167,
+                "unit": "ea",
+                "unitCost": 700
+              },
+              {
+                "name": "belts",
+                "qty": 1.167,
+                "unit": "ea",
+                "unitCost": 350
+              }
+            ]
+          },
+          {
+            "name": "Toilet Assembly \u2014 Recover Only",
+            "hours": 138,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "leather",
+                "qty": 60,
+                "unit": "ea",
+                "unitCost": 16
+              },
+              {
+                "name": "misc materials",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 75
+              },
+              {
+                "name": "belts",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 325
+              }
+            ]
+          },
+          {
+            "name": "Lower Side Panels \u2014 Strip & Recover",
+            "hours": 70,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "foam",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 500
+              },
+              {
+                "name": "shipping",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 300
+              },
+              {
+                "name": "Materials /fabric",
+                "qty": 11,
+                "unit": "ea",
+                "unitCost": 145
+              },
+              {
+                "name": "treatment",
+                "qty": 11,
+                "unit": "ea",
+                "unitCost": 25
+              }
+            ]
+          },
+          {
+            "name": "Cabin Seats \u2014 Redye",
+            "hours": 25.0,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "james",
+                "qty": 1.167,
+                "unit": "ea",
+                "unitCost": 2500
+              },
+              {
+                "name": "misc materials",
+                "qty": 0.167,
+                "unit": "ea",
+                "unitCost": 2000
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "date": "2023-04-01",
+        "tail": "",
+        "laborRate": 70,
+        "notes": "Tail Number not listed",
+        "parts": [
+          {
+            "name": "Entry Stairs \u2014 Replace Tread",
+            "hours": 36,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "vinyl",
+                "qty": 3,
+                "unit": "ea",
+                "unitCost": 98
+              },
+              {
+                "name": "adhesive",
+                "qty": 3,
+                "unit": "ea",
+                "unitCost": 120
+              },
+              {
+                "name": "cleaning materials",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 130
+              },
+              {
+                "name": "burns",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 150
+              },
+              {
+                "name": "misc",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 150
+              }
+            ]
+          },
+          {
+            "name": "Cockpit Carpet \u2014 Replace",
+            "hours": 0,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "carpet",
+                "qty": 10,
+                "unit": "ea",
+                "unitCost": 250
+              },
+              {
+                "name": "burns",
+                "qty": 0.5,
+                "unit": "ea",
+                "unitCost": 150
+              },
+              {
+                "name": "velcro",
+                "qty": 0.25,
+                "unit": "ea",
+                "unitCost": 200
+              },
+              {
+                "name": "adhesive",
+                "qty": 0.25,
+                "unit": "ea",
+                "unitCost": 130
+              }
+            ]
+          },
+          {
+            "name": "Cabin Carpet \u2014 Replace",
+            "hours": 0,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "carpet",
+                "qty": 31,
+                "unit": "ea",
+                "unitCost": 250
+              },
+              {
+                "name": "shipping",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 400
+              },
+              {
+                "name": "surging yarn",
+                "qty": 4,
+                "unit": "ea",
+                "unitCost": 35
+              },
+              {
+                "name": "burns",
+                "qty": 1.5,
+                "unit": "ea",
+                "unitCost": 150
+              },
+              {
+                "name": "velcro",
+                "qty": 0.75,
+                "unit": "ea",
+                "unitCost": 200
+              },
+              {
+                "name": "adhesive",
+                "qty": 0.75,
+                "unit": "ea",
+                "unitCost": 130
+              },
+              {
+                "name": "truett backing",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 120
+              }
+            ]
+          },
+          {
+            "name": "Lower Side Panels \u2014 Strip, Foam & Recover",
+            "hours": 110,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "ensolite skiv 1 25' roll 54\" wide",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 190
+              },
+              {
+                "name": "adhesive",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 175
+              },
+              {
+                "name": "misc materials",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 100
+              },
+              {
+                "name": "burns",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 150
+              },
+              {
+                "name": "utraleather",
+                "qty": 15,
+                "unit": "ea",
+                "unitCost": 100
+              }
+            ]
+          },
+          {
+            "name": "PSU Panels \u2014 Strip & Recover",
+            "hours": 105,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "ultraleather",
+                "qty": 5,
+                "unit": "ea",
+                "unitCost": 100
+              },
+              {
+                "name": "adhesive",
+                "qty": 0.25,
+                "unit": "ea",
+                "unitCost": 175
+              },
+              {
+                "name": "misc materials",
+                "qty": 0.5,
+                "unit": "ea",
+                "unitCost": 125
+              },
+              {
+                "name": "burns",
+                "qty": 0.5,
+                "unit": "ea",
+                "unitCost": 120
+              },
+              {
+                "name": "roll al76.125",
+                "qty": 0.5,
+                "unit": "ea",
+                "unitCost": 700
+              }
+            ]
+          },
+          {
+            "name": "Window Panels \u2014 Strip & Recover",
+            "hours": 105,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "ultraleather",
+                "qty": 5,
+                "unit": "ea",
+                "unitCost": 100
+              },
+              {
+                "name": "adhesive",
+                "qty": 0.25,
+                "unit": "ea",
+                "unitCost": 175
+              },
+              {
+                "name": "misc materials",
+                "qty": 0.5,
+                "unit": "ea",
+                "unitCost": 125
+              },
+              {
+                "name": "burns",
+                "qty": 0.5,
+                "unit": "ea",
+                "unitCost": 120
+              },
+              {
+                "name": "roll al76.125",
+                "qty": 0.5,
+                "unit": "ea",
+                "unitCost": 700
+              }
+            ]
+          },
+          {
+            "name": "Cabin Headliner \u2014 Strip, Foam & Recover",
+            "hours": 150,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "ultraleather",
+                "qty": 14,
+                "unit": "ea",
+                "unitCost": 100
+              },
+              {
+                "name": "burns",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 99
+              },
+              {
+                "name": "adhesive",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 175
+              },
+              {
+                "name": "50' roll al 76.125",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 700
+              },
+              {
+                "name": "shipping",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 150
+              }
+            ]
+          },
+          {
+            "name": "Pilot / Co-Pilot Seats \u2014 Refoam & Recover",
+            "hours": 117,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "DAX",
+                "qty": 2,
+                "unit": "ea",
+                "unitCost": 1500
+              },
+              {
+                "name": "leather",
+                "qty": 60,
+                "unit": "ea",
+                "unitCost": 17
+              },
+              {
+                "name": "shepskin",
+                "qty": 6,
+                "unit": "ea",
+                "unitCost": 69
+              },
+              {
+                "name": "paint and misc",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 300
+              },
+              {
+                "name": "test 8110 and report",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 695
+              },
+              {
+                "name": "DER",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 850
+              },
+              {
+                "name": "misc materials",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 250
+              },
+              {
+                "name": "belts",
+                "qty": 2,
+                "unit": "ea",
+                "unitCost": 325
+              }
+            ]
+          },
+          {
+            "name": "Jump Seats \u2014 Refoam & Recover",
+            "hours": 57,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "leather",
+                "qty": 20,
+                "unit": "ea",
+                "unitCost": 17
+              },
+              {
+                "name": "belts",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 325
+              },
+              {
+                "name": "misc materials",
+                "qty": 0.5,
+                "unit": "ea",
+                "unitCost": 250
+              }
+            ]
+          },
+          {
+            "name": "Cabin Seats \u2014 Save Foam, Add Foam & Recover",
+            "hours": 127.5,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": ".5 foam",
+                "qty": 1.0,
+                "unit": "ea",
+                "unitCost": 110
+              },
+              {
+                "name": "leather",
+                "qty": 108.333,
+                "unit": "ea",
+                "unitCost": 17
+              },
+              {
+                "name": "adhesive",
+                "qty": 0.167,
+                "unit": "ea",
+                "unitCost": 175
+              },
+              {
+                "name": "diamond perf leather",
+                "qty": 41.667,
+                "unit": "ea",
+                "unitCost": 21.55
+              },
+              {
+                "name": "velcro",
+                "qty": 0.667,
+                "unit": "ea",
+                "unitCost": 60
+              },
+              {
+                "name": "misc",
+                "qty": 0.167,
+                "unit": "ea",
+                "unitCost": 250
+              },
+              {
+                "name": "fireguard fabric bramport",
+                "qty": 2.5,
+                "unit": "ea",
+                "unitCost": 65
+              },
+              {
+                "name": "belts",
+                "qty": 1.0,
+                "unit": "ea",
+                "unitCost": 325
+              }
+            ]
+          },
+          {
+            "name": "Divan \u2014 Save Foam, Add Foam & Recover",
+            "hours": 182,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": ".5 foam",
+                "qty": 4,
+                "unit": "ea",
+                "unitCost": 110
+              },
+              {
+                "name": "leather",
+                "qty": 300,
+                "unit": "ea",
+                "unitCost": 17
+              },
+              {
+                "name": "adhesive",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 175
+              },
+              {
+                "name": "perfed leather",
+                "qty": 120,
+                "unit": "ea",
+                "unitCost": 21.55
+              },
+              {
+                "name": "shipping",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 250
+              },
+              {
+                "name": "velcro",
+                "qty": 2,
+                "unit": "ea",
+                "unitCost": 60
+              },
+              {
+                "name": "misc",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 250
+              },
+              {
+                "name": "belts",
+                "qty": 3,
+                "unit": "ea",
+                "unitCost": 325
+              }
+            ]
+          },
+          {
+            "name": "Toilet Assembly \u2014 Recover Only",
+            "hours": 43,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "leather",
+                "qty": 60,
+                "unit": "ea",
+                "unitCost": 16.6
+              },
+              {
+                "name": "misc materials",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 75
+              },
+              {
+                "name": "belts",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 325
+              }
+            ]
+          },
+          {
+            "name": "Baggage Floor \u2014 Strip & Recover",
+            "hours": 0,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "grospint",
+                "qty": 22,
+                "unit": "ea",
+                "unitCost": 80
+              },
+              {
+                "name": "tredford",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 300
+              },
+              {
+                "name": "adhesive",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 175
+              },
+              {
+                "name": "misc materials",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 200
+              }
+            ]
+          },
+          {
+            "name": "MED / Cabin Curtain \u2014 Fabricate New",
+            "hours": 40,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "leather",
+                "qty": 100,
+                "unit": "ea",
+                "unitCost": 16.6
+              },
+              {
+                "name": "misc parts",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 150
+              }
+            ]
+          },
+          {
+            "name": "Cockpit Curtain \u2014 Fabricate New",
+            "hours": 30,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "leather",
+                "qty": 55,
+                "unit": "ea",
+                "unitCost": 16.6
+              },
+              {
+                "name": "misc parts",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 100
+              }
+            ]
+          },
+          {
+            "name": "Galley Countertops \u2014 Fabricate / Replace",
+            "hours": 32,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "griform",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 3900
+              },
+              {
+                "name": "shipping",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 0
+              }
+            ]
+          },
+          {
+            "name": "Galley Woodwork \u2014 Fabricate / Repair",
+            "hours": 979,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "finish",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 11044
+              },
+              {
+                "name": "hector",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 65000
+              }
+            ]
+          },
+          {
+            "name": "R&R \u2014 Soft Goods & Cabinetry",
+            "hours": 394,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "gas",
+                "qty": 6,
+                "unit": "ea",
+                "unitCost": 75
+              },
+              {
+                "name": "lunches",
+                "qty": 40,
+                "unit": "ea",
+                "unitCost": 8
+              },
+              {
+                "name": "rental truck",
+                "qty": 4,
+                "unit": "ea",
+                "unitCost": 100
+              }
+            ]
+          },
+          {
+            "name": "Galley Throws \u2014 Fabricate New",
+            "hours": 0,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "carpet",
+                "qty": 3,
+                "unit": "ea",
+                "unitCost": 197
+              }
+            ]
+          },
+          {
+            "name": "Baggage Floor \u2014 Strip & Recover",
+            "hours": 71,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "tredford",
+                "qty": 6,
+                "unit": "ea",
+                "unitCost": 76
+              },
+              {
+                "name": "grospoint",
+                "qty": 10,
+                "unit": "ea",
+                "unitCost": 80
+              },
+              {
+                "name": "burns",
+                "qty": 2,
+                "unit": "ea",
+                "unitCost": 150
+              },
+              {
+                "name": "adhesive",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 65
+              },
+              {
+                "name": "misc",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 100
+              }
+            ]
+          },
+          {
+            "name": "Seats \u2014 Belt Rewebbing",
+            "hours": 10,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "c and m marine",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 3822
+              }
+            ]
+          },
+          {
+            "name": "Galley Countertops \u2014 Fabricate / Replace",
+            "hours": 36,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "grifform",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 3750
+              },
+              {
+                "name": "outgoing shipping",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 500
+              }
+            ]
+          },
+          {
+            "name": "Window Shades \u2014 Replace",
+            "hours": 10,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "grifform",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 3822
+              },
+              {
+                "name": "outgoing shipping",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 500
+              }
+            ]
+          },
+          {
+            "name": "Galley Woodwork \u2014 Fill Holes & Relaminate",
+            "hours": 6,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "misc materials",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 150
+              },
+              {
+                "name": "laminate",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 150
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "challenger350": {
+    "model": "Challenger 350",
+    "knownParts": [
+      "baggage_floor",
+      "bulkhead_panels",
+      "cabin_carpet",
+      "cabin_seats",
+      "closet_interior",
+      "crew_seats",
+      "galley_woodwork",
+      "lower_side_panels",
+      "overhead_panels",
+      "psu_panels",
+      "toilet_assembly",
+      "window_panels"
+    ],
+    "jobs": [
+      {
+        "date": "2026-05-01",
+        "tail": "N257RY",
+        "laborRate": 90,
+        "notes": "",
+        "parts": [
+          {
+            "name": "Bulkhead Panels \u2014 Galley Woodwork / Repair",
+            "hours": 75,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "finish WF depot",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 1000
+              },
+              {
+                "name": "sandpaper",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 200
+              },
+              {
+                "name": "burns",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 100
+              },
+              {
+                "name": "misc",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 200
+              }
+            ]
+          },
+          {
+            "name": "Galley Woodwork \u2014 Fabricate / Repair (Ledge Tables)",
+            "hours": 45,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "finish WF depot",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 400
+              },
+              {
+                "name": "sandpaper",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 100
+              },
+              {
+                "name": "burns",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 100
+              },
+              {
+                "name": "misc",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 100
+              }
+            ]
+          },
+          {
+            "name": "Closet Interior \u2014 Strip & Recover",
+            "hours": 40,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "finish WF depot",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 500
+              },
+              {
+                "name": "sandpaper",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 100
+              },
+              {
+                "name": "burns",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 100
+              },
+              {
+                "name": "misc",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 100
+              }
+            ]
+          },
+          {
+            "name": "Bulkhead Panels \u2014 Strip & Recover",
+            "hours": 60,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "finish WF depot",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 500
+              },
+              {
+                "name": "sandpaper",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 100
+              },
+              {
+                "name": "burns",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 100
+              },
+              {
+                "name": "misc",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 300
+              }
+            ]
+          },
+          {
+            "name": "Cabin Seats \u2014 Recover Only",
+            "hours": 23.3,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "leather",
+                "qty": 137.5,
+                "unit": "ea",
+                "unitCost": 16
+              },
+              {
+                "name": "shipping",
+                "qty": 0.167,
+                "unit": "ea",
+                "unitCost": 750
+              },
+              {
+                "name": "burn testing",
+                "qty": 0.167,
+                "unit": "ea",
+                "unitCost": 3750
+              },
+              {
+                "name": "additional leather",
+                "qty": 9.167,
+                "unit": "ea",
+                "unitCost": 16
+              },
+              {
+                "name": "misc materials",
+                "qty": 1.0,
+                "unit": "ea",
+                "unitCost": 100
+              },
+              {
+                "name": "dax 25 foam .5 galaxy w scrim",
+                "qty": 0.167,
+                "unit": "ea",
+                "unitCost": 700
+              },
+              {
+                "name": "belts",
+                "qty": 1.167,
+                "unit": "ea",
+                "unitCost": 350
+              },
+              {
+                "name": "foam",
+                "qty": 1.0,
+                "unit": "ea",
+                "unitCost": 1800
+              }
+            ]
+          },
+          {
+            "name": "Toilet Assembly \u2014 Recover Only",
+            "hours": 70,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "fabric",
+                "qty": 21,
+                "unit": "ea",
+                "unitCost": 150
+              },
+              {
+                "name": "shipping",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 500
+              },
+              {
+                "name": "burn testing",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 3750
+              },
+              {
+                "name": "additional fabric",
+                "qty": 7,
+                "unit": "ea",
+                "unitCost": 150
+              },
+              {
+                "name": "misc materials",
+                "qty": 4,
+                "unit": "ea",
+                "unitCost": 100
+              },
+              {
+                "name": "dax 25 foam .5 galaxy w scrim",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 700
+              },
+              {
+                "name": "belts",
+                "qty": 4,
+                "unit": "ea",
+                "unitCost": 350
+              },
+              {
+                "name": "misc materials",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 200
+              },
+              {
+                "name": "foam",
+                "qty": 3,
+                "unit": "ea",
+                "unitCost": 1800
+              }
+            ]
+          },
+          {
+            "name": "Lower Side Panels \u2014 Strip & Recover",
+            "hours": 70,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "foam AL 76 .125 50'",
+                "qty": 0.5,
+                "unit": "ea",
+                "unitCost": 1000
+              },
+              {
+                "name": "shipping",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 200
+              },
+              {
+                "name": "burns",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 150
+              },
+              {
+                "name": "ultraleather",
+                "qty": 7,
+                "unit": "ea",
+                "unitCost": 110
+              },
+              {
+                "name": "adhesive remover",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 150
+              }
+            ]
+          },
+          {
+            "name": "Window Panels \u2014 Strip & Recover",
+            "hours": 130,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "foam AL 76 .125 50'",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 1000
+              },
+              {
+                "name": "shipping",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 200
+              },
+              {
+                "name": "burns",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 150
+              },
+              {
+                "name": "ultraleather",
+                "qty": 14,
+                "unit": "ea",
+                "unitCost": 110
+              },
+              {
+                "name": "adhesive remover",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 150
+              }
+            ]
+          },
+          {
+            "name": "Overhead Panels \u2014 Strip & Recover",
+            "hours": 110,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "foam AL 76 .125 50'",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 1000
+              },
+              {
+                "name": "shipping",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 200
+              },
+              {
+                "name": "burns",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 150
+              },
+              {
+                "name": "ultraleather",
+                "qty": 14,
+                "unit": "ea",
+                "unitCost": 110
+              },
+              {
+                "name": "adhesive remover",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 150
+              }
+            ]
+          },
+          {
+            "name": "PSU Panels \u2014 Strip & Recover",
+            "hours": 60,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "shipping",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 75
+              },
+              {
+                "name": "burns",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 150
+              },
+              {
+                "name": "ultraleather",
+                "qty": 7,
+                "unit": "ea",
+                "unitCost": 110
+              },
+              {
+                "name": "adhesive remover",
+                "qty": 0.5,
+                "unit": "ea",
+                "unitCost": 150
+              }
+            ]
+          },
+          {
+            "name": "Cabin Carpet \u2014 Replace",
+            "hours": 150,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "red rock",
+                "qty": 28,
+                "unit": "ea",
+                "unitCost": 300
+              },
+              {
+                "name": "shipping",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 700
+              },
+              {
+                "name": "burns",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 150
+              },
+              {
+                "name": "velcro",
+                "qty": 14,
+                "unit": "ea",
+                "unitCost": 150
+              },
+              {
+                "name": "misc",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 100
+              },
+              {
+                "name": "pad shipping",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 400
+              }
+            ]
+          },
+          {
+            "name": "Galley Woodwork \u2014 Polish & Repair",
+            "hours": 798,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "materials",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 3500
+              }
+            ]
+          },
+          {
+            "name": "Crew Seats \u2014 Refoam & Recover",
+            "hours": 100,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "leather",
+                "qty": 110,
+                "unit": "ea",
+                "unitCost": 16
+              },
+              {
+                "name": "shipping",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 200
+              },
+              {
+                "name": "burn testing",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 300
+              },
+              {
+                "name": "misc materials",
+                "qty": 2,
+                "unit": "ea",
+                "unitCost": 100
+              },
+              {
+                "name": "belts",
+                "qty": 2,
+                "unit": "ea",
+                "unitCost": 350
+              },
+              {
+                "name": "foam",
+                "qty": 2,
+                "unit": "ea",
+                "unitCost": 1800
+              }
+            ]
+          },
+          {
+            "name": "Baggage Floor \u2014 Strip & Recover",
+            "hours": 120,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "grospoint",
+                "qty": 25,
+                "unit": "ea",
+                "unitCost": 110
+              },
+              {
+                "name": "shipping",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 250
+              },
+              {
+                "name": "adhesive",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 200
+              },
+              {
+                "name": "adhesive remover",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 150
+              },
+              {
+                "name": "misc materials",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 200
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "cessnacitation680": {
+    "model": "Cessna Citation 680",
+    "knownParts": [
+      "aft_headliner",
+      "baggage_floor",
+      "cabin_carpet",
+      "cabin_headliner",
+      "cabin_seats",
+      "cockpit_carpet",
+      "divan",
+      "entry_headliner",
+      "entry_stairs",
+      "galley_woodwork",
+      "lower_side_panels",
+      "pilot_cp_seats",
+      "psu_panels",
+      "rr",
+      "toilet_assembly",
+      "window_panels"
+    ],
+    "jobs": [
+      {
+        "date": "2023-06-02",
+        "tail": "",
+        "laborRate": 76,
+        "notes": "Tail Number wasn't provided",
+        "parts": [
+          {
+            "name": "Pilot / Co-Pilot Seats \u2014 Refoam & Recover",
+            "hours": 155,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "sheepskin plates",
+                "qty": 4,
+                "unit": "ea",
+                "unitCost": 90
+              },
+              {
+                "name": "leather",
+                "qty": 110,
+                "unit": "ea",
+                "unitCost": 10
+              },
+              {
+                "name": "belts",
+                "qty": 2,
+                "unit": "ea",
+                "unitCost": 350
+              },
+              {
+                "name": "foam",
+                "qty": 2,
+                "unit": "ea",
+                "unitCost": 1000
+              },
+              {
+                "name": "adhesive",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 175
+              },
+              {
+                "name": "shipping",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 250
+              }
+            ]
+          },
+          {
+            "name": "Toilet Assembly \u2014 Strip, Foam & Recover",
+            "hours": 50,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "leather",
+                "qty": 55,
+                "unit": "ea",
+                "unitCost": 10
+              },
+              {
+                "name": "belts",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 350
+              },
+              {
+                "name": "burns",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 100
+              },
+              {
+                "name": "foam",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 300
+              }
+            ]
+          },
+          {
+            "name": "Cockpit Carpet \u2014 Replace",
+            "hours": 0,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "carpet",
+                "qty": 8,
+                "unit": "ea",
+                "unitCost": 250
+              },
+              {
+                "name": "velcro",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 65
+              },
+              {
+                "name": "misc materials",
+                "qty": 0.5,
+                "unit": "ea",
+                "unitCost": 150
+              },
+              {
+                "name": "burns",
+                "qty": 0.5,
+                "unit": "ea",
+                "unitCost": 200
+              },
+              {
+                "name": "shipping",
+                "qty": 0.5,
+                "unit": "ea",
+                "unitCost": 450
+              }
+            ]
+          },
+          {
+            "name": "Cabin Carpet \u2014 Replace",
+            "hours": 0,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "carpet",
+                "qty": 21,
+                "unit": "ea",
+                "unitCost": 250
+              },
+              {
+                "name": "velcro",
+                "qty": 3,
+                "unit": "ea",
+                "unitCost": 65
+              },
+              {
+                "name": "misc materials",
+                "qty": 0.5,
+                "unit": "ea",
+                "unitCost": 150
+              },
+              {
+                "name": "burns",
+                "qty": 0.5,
+                "unit": "ea",
+                "unitCost": 200
+              },
+              {
+                "name": "shipping",
+                "qty": 0.5,
+                "unit": "ea",
+                "unitCost": 450
+              }
+            ]
+          },
+          {
+            "name": "Lower Side Panels \u2014 Strip & Recover",
+            "hours": 120,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "utraleather",
+                "qty": 9,
+                "unit": "ea",
+                "unitCost": 90
+              },
+              {
+                "name": "foam",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 400
+              },
+              {
+                "name": "adhesive",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 175
+              },
+              {
+                "name": "burns",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 150
+              },
+              {
+                "name": "shipping",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 200
+              }
+            ]
+          },
+          {
+            "name": "Divan \u2014 Refoam & Recover",
+            "hours": 120,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "leather",
+                "qty": 110,
+                "unit": "ea",
+                "unitCost": 10
+              },
+              {
+                "name": "foam",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 2000
+              },
+              {
+                "name": "belts",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 350
+              },
+              {
+                "name": "velcro",
+                "qty": 2,
+                "unit": "ea",
+                "unitCost": 65
+              },
+              {
+                "name": "adhesive",
+                "qty": 0.5,
+                "unit": "ea",
+                "unitCost": 175
+              },
+              {
+                "name": "misc",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 200
+              },
+              {
+                "name": "shipping",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 200
+              },
+              {
+                "name": "burn leather",
+                "qty": 55,
+                "unit": "ea",
+                "unitCost": 10
+              },
+              {
+                "name": "fire block material",
+                "qty": 5,
+                "unit": "ea",
+                "unitCost": 70
+              }
+            ]
+          },
+          {
+            "name": "Cabin Seats \u2014 Refoam & Recover",
+            "hours": 135.0,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "leather",
+                "qty": 137.5,
+                "unit": "ea",
+                "unitCost": 10
+              },
+              {
+                "name": "foam",
+                "qty": 1.0,
+                "unit": "ea",
+                "unitCost": 2000
+              },
+              {
+                "name": "adhesive",
+                "qty": 0.25,
+                "unit": "ea",
+                "unitCost": 175
+              },
+              {
+                "name": "belts",
+                "qty": 1.0,
+                "unit": "ea",
+                "unitCost": 350
+              },
+              {
+                "name": "velcro",
+                "qty": 0.5,
+                "unit": "ea",
+                "unitCost": 69
+              },
+              {
+                "name": "shipping",
+                "qty": 0.125,
+                "unit": "ea",
+                "unitCost": 400
+              },
+              {
+                "name": "Oil burner test",
+                "qty": 0.125,
+                "unit": "ea",
+                "unitCost": 4444
+              },
+              {
+                "name": "burn leather",
+                "qty": 6.875,
+                "unit": "ea",
+                "unitCost": 10
+              }
+            ]
+          },
+          {
+            "name": "Entry Headliner \u2014 Strip & Recover",
+            "hours": 60,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "AL 76.125",
+                "qty": 0.25,
+                "unit": "ea",
+                "unitCost": 800
+              },
+              {
+                "name": "adhesive",
+                "qty": 0.25,
+                "unit": "ea",
+                "unitCost": 175
+              },
+              {
+                "name": "adhesive remover",
+                "qty": 0.25,
+                "unit": "ea",
+                "unitCost": 150
+              },
+              {
+                "name": "misc materials",
+                "qty": 0.33,
+                "unit": "ea",
+                "unitCost": 100
+              },
+              {
+                "name": "shipping",
+                "qty": 0.33,
+                "unit": "ea",
+                "unitCost": 150
+              },
+              {
+                "name": "burns",
+                "qty": 0.33,
+                "unit": "ea",
+                "unitCost": 125
+              }
+            ]
+          },
+          {
+            "name": "Cabin Headliner \u2014 Strip & Recover",
+            "hours": 100,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "AL 76.125",
+                "qty": 0.5,
+                "unit": "ea",
+                "unitCost": 800
+              },
+              {
+                "name": "adhesive",
+                "qty": 0.5,
+                "unit": "ea",
+                "unitCost": 175
+              },
+              {
+                "name": "adhesive remover",
+                "qty": 0.5,
+                "unit": "ea",
+                "unitCost": 150
+              },
+              {
+                "name": "misc materials",
+                "qty": 0.33,
+                "unit": "ea",
+                "unitCost": 100
+              },
+              {
+                "name": "shipping",
+                "qty": 0.33,
+                "unit": "ea",
+                "unitCost": 150
+              },
+              {
+                "name": "burns",
+                "qty": 0.33,
+                "unit": "ea",
+                "unitCost": 125
+              }
+            ]
+          },
+          {
+            "name": "AFT Headliner \u2014 Strip & Recover",
+            "hours": 80,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "AL 76.125",
+                "qty": 0.25,
+                "unit": "ea",
+                "unitCost": 800
+              },
+              {
+                "name": "adhesive",
+                "qty": 0.25,
+                "unit": "ea",
+                "unitCost": 175
+              },
+              {
+                "name": "adhesive remover",
+                "qty": 0.25,
+                "unit": "ea",
+                "unitCost": 150
+              },
+              {
+                "name": "misc materials",
+                "qty": 0.34,
+                "unit": "ea",
+                "unitCost": 100
+              },
+              {
+                "name": "shipping",
+                "qty": 0.34,
+                "unit": "ea",
+                "unitCost": 150
+              },
+              {
+                "name": "burns",
+                "qty": 0.34,
+                "unit": "ea",
+                "unitCost": 125
+              }
+            ]
+          },
+          {
+            "name": "PSU Panels \u2014 Strip & Recover",
+            "hours": 0,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "AL 76.125",
+                "qty": 0.25,
+                "unit": "ea",
+                "unitCost": 800
+              }
+            ]
+          },
+          {
+            "name": "Window Panels \u2014 Strip & Recover",
+            "hours": 0,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "AL 76.125",
+                "qty": 0.25,
+                "unit": "ea",
+                "unitCost": 800
+              }
+            ]
+          },
+          {
+            "name": "Entry Stairs \u2014 Replace Tread",
+            "hours": 70,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "vinyl",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 600
+              },
+              {
+                "name": "adhesive",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 150
+              },
+              {
+                "name": "misc materials",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 200
+              },
+              {
+                "name": "paint",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 250
+              }
+            ]
+          },
+          {
+            "name": "Galley Woodwork \u2014 Fabricate / Repair",
+            "hours": 300,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "misc materials",
+                "qty": 2,
+                "unit": "ea",
+                "unitCost": 1000
+              },
+              {
+                "name": "placards",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 300
+              }
+            ]
+          },
+          {
+            "name": "R&R \u2014 Soft Goods Only",
+            "hours": 100,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "misc materials",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 300
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "gulfstreamg5": {
+    "model": "Gulfstream G5",
+    "knownParts": [
+      "cabin_carpet",
+      "cabin_seats",
+      "cockpit_carpet",
+      "crew_rest_carpet",
+      "entry_stairs",
+      "glareshield",
+      "lower_side_panels",
+      "pilot_cp_seats",
+      "seat_base_carpet",
+      "toilet_assembly"
+    ],
+    "jobs": [
+      {
+        "date": "2025-06-02",
+        "tail": "",
+        "laborRate": 90,
+        "notes": "Tail Number wasn't provided",
+        "parts": [
+          {
+            "name": "Pilot / Co-Pilot Seats \u2014 Strip & Recover",
+            "hours": 80,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "foam",
+                "qty": 2,
+                "unit": "ea",
+                "unitCost": 100
+              },
+              {
+                "name": "sheepskin",
+                "qty": 4,
+                "unit": "ea",
+                "unitCost": 120
+              },
+              {
+                "name": "leather",
+                "qty": 120,
+                "unit": "ea",
+                "unitCost": 15
+              },
+              {
+                "name": "misc materials",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 200
+              },
+              {
+                "name": "burn tests",
+                "qty": 2,
+                "unit": "ea",
+                "unitCost": 150
+              },
+              {
+                "name": "belts",
+                "qty": 2,
+                "unit": "ea",
+                "unitCost": 400
+              }
+            ]
+          },
+          {
+            "name": "Glareshield \u2014 Strip & Recover",
+            "hours": 36,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "UL matte black",
+                "qty": 4,
+                "unit": "ea",
+                "unitCost": 130
+              },
+              {
+                "name": "shipping",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 100
+              },
+              {
+                "name": "burns",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 150
+              },
+              {
+                "name": "misc",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 200
+              }
+            ]
+          },
+          {
+            "name": "Entry Stairs \u2014 Strip & Recover",
+            "hours": 35,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "red tape",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 400
+              },
+              {
+                "name": "vinyl",
+                "qty": 4,
+                "unit": "ea",
+                "unitCost": 200
+              },
+              {
+                "name": "misc materials",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 150
+              },
+              {
+                "name": "burns",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 150
+              },
+              {
+                "name": "shipping",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 75
+              }
+            ]
+          },
+          {
+            "name": "Cabin Carpet \u2014 Replace",
+            "hours": 120,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "carpet",
+                "qty": 32,
+                "unit": "ea",
+                "unitCost": 275
+              },
+              {
+                "name": "burn tests",
+                "qty": 2,
+                "unit": "ea",
+                "unitCost": 150
+              },
+              {
+                "name": "shipping",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 600
+              },
+              {
+                "name": "surging yarn",
+                "qty": 3,
+                "unit": "ea",
+                "unitCost": 50
+              },
+              {
+                "name": "velcro",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 150
+              },
+              {
+                "name": "misc materials",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 150
+              }
+            ]
+          },
+          {
+            "name": "Cabin Seats \u2014 Recover Only",
+            "hours": 75.0,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "leather",
+                "qty": 110.0,
+                "unit": "ea",
+                "unitCost": 16
+              },
+              {
+                "name": "shipping",
+                "qty": 0.167,
+                "unit": "ea",
+                "unitCost": 750
+              },
+              {
+                "name": "burn testing",
+                "qty": 0.167,
+                "unit": "ea",
+                "unitCost": 3750
+              },
+              {
+                "name": "additional leather",
+                "qty": 9.167,
+                "unit": "ea",
+                "unitCost": 16
+              },
+              {
+                "name": "misc materials",
+                "qty": 1.0,
+                "unit": "ea",
+                "unitCost": 100
+              },
+              {
+                "name": "dax 25 foam .5 galaxy w scrim",
+                "qty": 0.167,
+                "unit": "ea",
+                "unitCost": 700
+              },
+              {
+                "name": "belts",
+                "qty": 1.167,
+                "unit": "ea",
+                "unitCost": 350
+              }
+            ]
+          },
+          {
+            "name": "Toilet Assembly \u2014 Recover Only",
+            "hours": 138,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "leather",
+                "qty": 60,
+                "unit": "ea",
+                "unitCost": 16
+              },
+              {
+                "name": "misc materials",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 100
+              }
+            ]
+          },
+          {
+            "name": "Lower Side Panels \u2014 Strip & Recover",
+            "hours": 70,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "foam",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 500
+              },
+              {
+                "name": "shipping",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 300
+              },
+              {
+                "name": "Materials /fabric",
+                "qty": 11,
+                "unit": "ea",
+                "unitCost": 145
+              },
+              {
+                "name": "treatment",
+                "qty": 11,
+                "unit": "ea",
+                "unitCost": 25
+              }
+            ]
+          },
+          {
+            "name": "Cabin Seats \u2014 Redye",
+            "hours": 25.0,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "james",
+                "qty": 1.167,
+                "unit": "ea",
+                "unitCost": 2500
+              },
+              {
+                "name": "misc materials",
+                "qty": 0.167,
+                "unit": "ea",
+                "unitCost": 2000
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "date": "2025-06-02",
+        "tail": "",
+        "laborRate": 70,
+        "notes": "Tail Number wasn't provided",
+        "parts": [
+          {
+            "name": "Cockpit Carpet \u2014 Replace",
+            "hours": 80,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "carpet",
+                "qty": 10,
+                "unit": "ea",
+                "unitCost": 400
+              },
+              {
+                "name": "burns",
+                "qty": 0.5,
+                "unit": "ea",
+                "unitCost": 100
+              },
+              {
+                "name": "velcro",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 60
+              },
+              {
+                "name": "adhesive",
+                "qty": 0.5,
+                "unit": "ea",
+                "unitCost": 175
+              },
+              {
+                "name": "carpet padding per yard",
+                "qty": 5,
+                "unit": "ea",
+                "unitCost": 353
+              },
+              {
+                "name": "truett",
+                "qty": 40,
+                "unit": "ea",
+                "unitCost": 2
+              }
+            ]
+          },
+          {
+            "name": "Cabin Carpet \u2014 Replace",
+            "hours": 200,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "carpet",
+                "qty": 40,
+                "unit": "ea",
+                "unitCost": 400
+              },
+              {
+                "name": "burns",
+                "qty": 1.5,
+                "unit": "ea",
+                "unitCost": 100
+              },
+              {
+                "name": "velcro",
+                "qty": 5,
+                "unit": "ea",
+                "unitCost": 60
+              },
+              {
+                "name": "adhesive",
+                "qty": 1.5,
+                "unit": "ea",
+                "unitCost": 175
+              },
+              {
+                "name": "carpet padding per yard",
+                "qty": 20,
+                "unit": "ea",
+                "unitCost": 353
+              },
+              {
+                "name": "truett",
+                "qty": 160,
+                "unit": "ea",
+                "unitCost": 2
+              }
+            ]
+          },
+          {
+            "name": "Seat Base Carpet \u2014 Replace",
+            "hours": 120,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "carpet",
+                "qty": 40,
+                "unit": "ea",
+                "unitCost": 400
+              },
+              {
+                "name": "burns",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 100
+              },
+              {
+                "name": "velcro",
+                "qty": 3,
+                "unit": "ea",
+                "unitCost": 60
+              },
+              {
+                "name": "adhesive",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 175
+              }
+            ]
+          },
+          {
+            "name": "Crew Rest Carpet \u2014 Replace",
+            "hours": 270,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "carpet",
+                "qty": 40,
+                "unit": "ea",
+                "unitCost": 400
+              },
+              {
+                "name": "burns",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 100
+              },
+              {
+                "name": "velcro",
+                "qty": 3,
+                "unit": "ea",
+                "unitCost": 60
+              },
+              {
+                "name": "adhesive",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 175
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "cessna550": {
+    "model": "Cessna 550",
+    "knownParts": [
+      "aft_headliner",
+      "cabin_carpet",
+      "cabin_headliner",
+      "cabin_seats",
+      "cockpit_carpet",
+      "entry_headliner",
+      "galley_woodwork",
+      "lower_side_panels",
+      "pilot_cp_seats",
+      "rr",
+      "toilet_assembly",
+      "window_panels"
+    ],
+    "jobs": [
+      {
+        "date": "2024-01-02",
+        "tail": "N109JC",
+        "laborRate": 73,
+        "notes": "",
+        "parts": [
+          {
+            "name": "Cabin Seats \u2014 Refoam & Recover",
+            "hours": 0,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "velcro",
+                "qty": 1.0,
+                "unit": "ea",
+                "unitCost": 40
+              },
+              {
+                "name": "adhesive",
+                "qty": 0.286,
+                "unit": "ea",
+                "unitCost": 150
+              },
+              {
+                "name": "misc materials",
+                "qty": 1.0,
+                "unit": "ea",
+                "unitCost": 50
+              },
+              {
+                "name": "DAX foam",
+                "qty": 1.0,
+                "unit": "ea",
+                "unitCost": 1500
+              },
+              {
+                "name": "belts",
+                "qty": 1.0,
+                "unit": "ea",
+                "unitCost": 250
+              },
+              {
+                "name": "leather",
+                "qty": 110.0,
+                "unit": "ea",
+                "unitCost": 10
+              },
+              {
+                "name": "shipping",
+                "qty": 0.143,
+                "unit": "ea",
+                "unitCost": 500
+              }
+            ]
+          },
+          {
+            "name": "Toilet Assembly \u2014 Strip, Foam & Recover",
+            "hours": 0,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "foam",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 250
+              },
+              {
+                "name": "misc",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 100
+              },
+              {
+                "name": "belt",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 250
+              },
+              {
+                "name": "burns",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 150
+              }
+            ]
+          },
+          {
+            "name": "Pilot / Co-Pilot Seats \u2014 Refoam & Recover",
+            "hours": 170,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "foam",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 1500
+              },
+              {
+                "name": "belts",
+                "qty": 2,
+                "unit": "ea",
+                "unitCost": 350
+              },
+              {
+                "name": "leather",
+                "qty": 55,
+                "unit": "ea",
+                "unitCost": 10
+              },
+              {
+                "name": "shepskin",
+                "qty": 4,
+                "unit": "ea",
+                "unitCost": 100
+              },
+              {
+                "name": "burns",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 150
+              }
+            ]
+          },
+          {
+            "name": "Entry Headliner \u2014 Strip & Recover",
+            "hours": 20,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "ultra leather",
+                "qty": 2,
+                "unit": "ea",
+                "unitCost": 100
+              },
+              {
+                "name": "foam",
+                "qty": 0.25,
+                "unit": "ea",
+                "unitCost": 350
+              },
+              {
+                "name": "adhesive",
+                "qty": 0.15,
+                "unit": "ea",
+                "unitCost": 160
+              },
+              {
+                "name": "burns",
+                "qty": 0.33,
+                "unit": "ea",
+                "unitCost": 150
+              },
+              {
+                "name": "misc cleaning",
+                "qty": 0.33,
+                "unit": "ea",
+                "unitCost": 300
+              }
+            ]
+          },
+          {
+            "name": "Cabin Headliner \u2014 Strip & Recover",
+            "hours": 40,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "ultra leather",
+                "qty": 4,
+                "unit": "ea",
+                "unitCost": 100
+              },
+              {
+                "name": "foam",
+                "qty": 0.5,
+                "unit": "ea",
+                "unitCost": 350
+              },
+              {
+                "name": "adhesive",
+                "qty": 0.2,
+                "unit": "ea",
+                "unitCost": 160
+              },
+              {
+                "name": "burns",
+                "qty": 0.34,
+                "unit": "ea",
+                "unitCost": 150
+              },
+              {
+                "name": "misc cleaning",
+                "qty": 0.34,
+                "unit": "ea",
+                "unitCost": 300
+              }
+            ]
+          },
+          {
+            "name": "AFT Headliner \u2014 Strip & Recover",
+            "hours": 15,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "ultra leather",
+                "qty": 2,
+                "unit": "ea",
+                "unitCost": 100
+              },
+              {
+                "name": "foam",
+                "qty": 0.25,
+                "unit": "ea",
+                "unitCost": 350
+              },
+              {
+                "name": "adhesive",
+                "qty": 0.15,
+                "unit": "ea",
+                "unitCost": 160
+              },
+              {
+                "name": "burns",
+                "qty": 0.33,
+                "unit": "ea",
+                "unitCost": 150
+              },
+              {
+                "name": "misc cleaning",
+                "qty": 0.33,
+                "unit": "ea",
+                "unitCost": 300
+              }
+            ]
+          },
+          {
+            "name": "Window Panels \u2014 Strip, Foam & Recover",
+            "hours": 135,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "ultra leather",
+                "qty": 16,
+                "unit": "ea",
+                "unitCost": 100
+              },
+              {
+                "name": "foam",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 700
+              },
+              {
+                "name": "adhesive",
+                "qty": 0.5,
+                "unit": "ea",
+                "unitCost": 160
+              },
+              {
+                "name": "burns",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 150
+              },
+              {
+                "name": "misc cleaning",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 300
+              }
+            ]
+          },
+          {
+            "name": "Lower Side Panels \u2014 Strip & Recover",
+            "hours": 84,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "ultra leather",
+                "qty": 5,
+                "unit": "ea",
+                "unitCost": 100
+              }
+            ]
+          },
+          {
+            "name": "Cockpit Carpet \u2014 Replace",
+            "hours": 40,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "carpet",
+                "qty": 8,
+                "unit": "ea",
+                "unitCost": 265
+              },
+              {
+                "name": "velcro",
+                "qty": 0.5,
+                "unit": "ea",
+                "unitCost": 100
+              },
+              {
+                "name": "surging material",
+                "qty": 0.5,
+                "unit": "ea",
+                "unitCost": 50
+              },
+              {
+                "name": "shipping",
+                "qty": 0.33,
+                "unit": "ea",
+                "unitCost": 400
+              },
+              {
+                "name": "misc",
+                "qty": 0.33,
+                "unit": "ea",
+                "unitCost": 500
+              }
+            ]
+          },
+          {
+            "name": "Cabin Carpet \u2014 Replace",
+            "hours": 90,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "carpet",
+                "qty": 25,
+                "unit": "ea",
+                "unitCost": 265
+              },
+              {
+                "name": "velcro",
+                "qty": 1.5,
+                "unit": "ea",
+                "unitCost": 100
+              },
+              {
+                "name": "surging material",
+                "qty": 1.5,
+                "unit": "ea",
+                "unitCost": 50
+              },
+              {
+                "name": "shipping",
+                "qty": 0.67,
+                "unit": "ea",
+                "unitCost": 400
+              },
+              {
+                "name": "misc",
+                "qty": 0.67,
+                "unit": "ea",
+                "unitCost": 500
+              }
+            ]
+          },
+          {
+            "name": "Galley Woodwork \u2014 Fabricate / Repair",
+            "hours": 200,
+            "rateOverride": null,
+            "materials": [
+              {
+                "name": "freeman",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 18000
+              },
+              {
+                "name": "burns",
+                "qty": 1,
+                "unit": "ea",
+                "unitCost": 500
+              }
+            ]
+          },
+          {
+            "name": "R&R \u2014 Soft Goods Only",
+            "hours": 150,
+            "rateOverride": null,
+            "materials": []
+          }
+        ]
+      }
+    ]
+  }
+}
